@@ -4,3 +4,6 @@
 [submodule "examples/MusicPlayerPlugin"]
 	path = examples/MusicPlayerPlugin
 	url = https://github.com/PrashantUnity/MusicPlayerPlayground.git
+[submodule "examples/ImageEditorPlugin"]
+	path = examples/ImageEditorPlugin
+	url = https://github.com/PrashantUnity/FryImage.git

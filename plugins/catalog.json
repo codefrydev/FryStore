@@ -518,7 +518,7 @@
     "rating": 5.0,
     "ratingCount": 18,
     "installCount": 640,
-    "formattedSize": "147 KB",
+    "formattedSize": "217 KB",
     "iconKind": "ImageEditOutline",
     "iconColorHex": "#8B5CF6",
     "license": "MIT",
@@ -564,15 +564,15 @@
     "versions": [
       {
         "version": "3.0.0",
-        "releaseDate": "2026-09-20",
+        "releaseDate": "2026-10-11",
         "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/frypdf.overlay.imageeditor/v3.0.0/ImageEditor.fryplugin",
-        "sha256": "391692a33ded11050c0199d13244f60977e7064245a9a303ae0f8d54f985702e",
-        "formattedSize": "147 KB",
+        "sha256": "74a20199dac26689ace5a70ee62b22bb4ae064293346a6eed0a645dc7faf3cd6",
+        "formattedSize": "217 KB",
         "minHostVersion": "1.0.0",
         "targetFramework": "net10.0",
         "releaseNotes": "Release v3.0.0 of Image Editor."
       }
     ],
-    "sha256": "391692a33ded11050c0199d13244f60977e7064245a9a303ae0f8d54f985702e"
+    "sha256": "74a20199dac26689ace5a70ee62b22bb4ae064293346a6eed0a645dc7faf3cd6"
   }
 ]

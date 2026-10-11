@@ -33,7 +33,7 @@ PDFCreator-resources/
 │   ├── ScratchpadPlugin/                     # Review scratchpad and markdown notes
 │   ├── TelemetryPlugin/                      # Document telemetry and GC memory HUD
 │   ├── MusicPlayerPlugin/                    # Playlist music player overlay & LibVLC (git submodule -> PrashantUnity/MusicPlayerPlayground)
-│   └── ImageEditorPlugin/                    # Canva-style layered image editor overlay
+│   └── ImageEditorPlugin/                    # FryImage layered image & graphics studio (git submodule -> PrashantUnity/FryImage)
 ├── plugins/                                  # Marketplace distribution center
 │   ├── catalog.json                          # Official FryPDF remote marketplace registry
 │   ├── com.frypdf.plugin.csharpeditor/       # CSharpEditor.fryplugin, plugin.json, README.md
