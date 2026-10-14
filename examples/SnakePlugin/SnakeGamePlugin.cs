@@ -4,21 +4,22 @@ using System.Threading;
 using System.Threading.Tasks;
 using Avalonia.Controls;
 using CommunityToolkit.Mvvm.Input;
-using PdfEditorApp.Core.Plugins;
-using PdfEditorApp.Core.Plugins.Descriptors;
-using PdfEditorApp.Core.Plugins.Manifests;
+using FryWorld.Sdk.Descriptors;
+using FryWorld.Sdk.Models;
+using FryWorld.Sdk.Plugins;
+using FryWorld.Sdk.Services;
 
 namespace PdfEditorApp.Plugins.Snake;
 
 /// <summary>
-/// Modular plugin contributing a playable, draggable Snake game targeting the 'shell.overlay' slot.
-/// Inspired by the Cordis client-side dynamic plugin architecture.
+/// Modular plugin contributing a playable, draggable Snake game targeting the shell overlay.
 /// </summary>
 public class SnakeGamePlugin : IFryPlugin
 {
-    public string Id => "frypdf.overlay.snake";
-    public string Name => "Playable Snake Game";
+    public string Id => "com.fryworld.snake";
+    public string Name => "Snake";
     public Version Version => new(1, 0, 0);
+    public bool AutoOpenOverlay => false;
     public IReadOnlyList<Type> RequiredServices => Array.Empty<Type>();
 
     public IReadOnlyDictionary<string, PluginSettingDefinition>? SettingsSchema => new Dictionary<string, PluginSettingDefinition>
@@ -27,7 +28,7 @@ public class SnakeGamePlugin : IFryPlugin
         {
             Label = "Game Speed",
             Description = "Default tick speed for snake movement",
-            Type = "select",
+            Type = PluginSettingType.Select,
             Options = new() { "Normal", "Fast", "Zen" },
             DefaultValue = "Normal"
         },
@@ -35,100 +36,69 @@ public class SnakeGamePlugin : IFryPlugin
         {
             Label = "Wall Collision Mode",
             Description = "When enabled, hitting the border causes game over. When disabled, the snake wraps around edges.",
-            Type = "boolean",
+            Type = PluginSettingType.Boolean,
             DefaultValue = true
         }
     };
 
     public Task ApplyAsync(IFryPluginContext ctx, CancellationToken ct = default)
     {
+        void OpenSnake()
+        {
+            var fryWorldVmType = Type.GetType("FryWorld.ViewModels.MainViewModel, FryWorld");
+            if (fryWorldVmType != null)
+            {
+                var mainVm = ctx.GetService(fryWorldVmType);
+                fryWorldVmType.GetMethod("NavigateToPlugin")?.Invoke(mainVm, ["com.fryworld.snake"]);
+            }
+        }
+
         // 1. Register Shell Overlay Descriptor
-        ctx.RegisterOverlay(new OverlayDescriptor
+        var overlayReg = ctx.RegisterOverlay(new OverlayDescriptor
         {
             Id = Id,
             Title = "🐍 Snake",
-            Slot = "shell.overlay",
             DefaultWidth = 320,
             DefaultHeight = 420,
-            InitialX = null,
-            InitialY = 100,
-            IsDraggable = true,
-            IsMinimizable = true,
-            IsClosable = true,
+            MinWidth = 280,
+            MinHeight = 360,
             IconKind = "GamepadVariantOutline",
-            ChromeMode = OverlayChromeMode.CustomChrome,
-            ViewType = typeof(SnakeGameView),
-            ViewModelType = typeof(SnakeGameViewModel),
-            ViewFactory = sp => new SnakeGameView
+            AutoOpenOnMount = false,
+            ViewFactory = () => new SnakeGameView
             {
-                DataContext = new SnakeGameViewModel(sp)
-            },
-            ViewModelFactory = sp => new SnakeGameViewModel(sp)
+                DataContext = new SnakeGameViewModel(ctx)
+            }
         });
 
         // 2. Register Command Palette action
-        ctx.RegisterCommand(new CommandPaletteDescriptor
+        var cmdReg = ctx.RegisterCommand(new CommandPaletteDescriptor
         {
             Id = "cmd.overlay.snake",
-            Title = "Play Snake Game (Shell Overlay)",
-            Subtitle = "Launch draggable retro-arcade Snake game floating over the application",
-            Category = "Shell Overlays",
+            Title = "Play Snake Game",
+            Subtitle = "Launch retro-arcade Snake game floating over the application",
+            Category = "Games",
             IconKind = "GamepadVariantOutline",
-            Shortcut = "Ctrl+Alt+S",
-            Order = 95,
-            Action = sp =>
-            {
-                if (sp.GetService(typeof(IOverlayRegistry)) is IOverlayRegistry reg)
-                {
-                    reg.ToggleOverlay(Id);
-                }
-            }
+            ShortcutKey = "Ctrl+Alt+S",
+            Command = new RelayCommand(OpenSnake)
         });
 
         // 3. Register Footer Status Bar Widget (Clickable 🐍 Snake pill)
-        ctx.RegisterStatusBarWidget(new StatusBarWidgetDescriptor
+        var statusReg = ctx.RegisterStatusBarWidget(new StatusBarWidgetDescriptor
         {
-            WidgetId = "frypdf.status.snake",
-            Alignment = StatusBarAlignment.Right,
+            Id = "fryworld.status.snake",
+            Label = "🐍 Snake",
+            Tooltip = "Play Snake Game (Floating Shell Overlay)",
+            AlignRight = true,
             Order = 15,
-            ToolTip = "Play Snake Game (Floating Shell Overlay)",
-            Factory = sp =>
-            {
-                var reg = sp.GetService(typeof(IOverlayRegistry)) as IOverlayRegistry;
-                return new Button
-                {
-                    Content = "🐍 Snake",
-                    Command = new RelayCommand(() => reg?.ToggleOverlay(Id))
-                };
-            }
+            ClickCommand = new RelayCommand(OpenSnake)
         });
 
-        // 4. Register Ribbon Action in View Tab
-        ctx.RegisterRibbonAction(new RibbonActionDescriptor
-        {
-            Id = "frypdf.ribbon.action.snake",
-            TabId = "view",
-            GroupId = "plugins",
-            Label = "Snake Game",
-            Tooltip = "Launch floating retro Snake arcade in shell.overlay",
-            IconKind = "GamepadVariantOutline",
-            Order = 50,
-            Action = sp =>
-            {
-                if (sp.GetService(typeof(IOverlayRegistry)) is IOverlayRegistry reg)
-                {
-                    reg.ToggleOverlay(Id);
-                }
-            }
-        });
-
-        // Reversible effect: Ensure overlay is hidden if plugin is unloaded
+        // 4. Reversible effects for clean unmount
         ctx.RegisterEffect(() =>
         {
-            if (ctx.TryGetService<IOverlayRegistry>(out var reg))
-            {
-                reg.HideOverlay(Id);
-            }
+            overlayReg.Dispose();
+            cmdReg.Dispose();
+            statusReg.Dispose();
         });
 
         return Task.CompletedTask;

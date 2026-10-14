@@ -1,5 +1,5 @@
 {
-  "id": "frypdf.overlay.telemetry",
+  "id": "com.fryworld.telemetry",
   "name": "Document Telemetry HUD",
   "version": "1.0.0",
   "author": "FryPDF Core Engineering",

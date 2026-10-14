@@ -5,7 +5,7 @@ using Avalonia.Threading;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.Extensions.DependencyInjection;
-using PdfEditorApp.Core.Plugins.Settings;
+using FryWorld.Sdk.Services;
 
 namespace PdfEditorApp.Plugins.Snake;
 
@@ -36,7 +36,7 @@ public partial class SnakeGameViewModel : ObservableObject, IDisposable
 {
     private readonly DispatcherTimer _gameTimer;
     private readonly Random _random = new();
-    private readonly IPluginSettingsStore? _settingsStore;
+    private readonly ISettingsManager? _settingsStore;
 
     public const int GridWidth = 20;
     public const int GridHeight = 20;
@@ -74,7 +74,7 @@ public partial class SnakeGameViewModel : ObservableObject, IDisposable
 
     public SnakeGameViewModel(IServiceProvider? serviceProvider = null)
     {
-        _settingsStore = serviceProvider?.GetService<IPluginSettingsStore>();
+        _settingsStore = serviceProvider?.GetService<ISettingsManager>();
         LoadSettingsAndHighScore();
 
         _gameTimer = new DispatcherTimer
@@ -90,9 +90,9 @@ public partial class SnakeGameViewModel : ObservableObject, IDisposable
     {
         if (_settingsStore != null)
         {
-            HighScore = (int)_settingsStore.GetSetting("frypdf.overlay.snake", "HighScore", 0.0);
-            WallCollision = _settingsStore.GetSetting("frypdf.overlay.snake", "WallCollision", true);
-            var speedPref = _settingsStore.GetSetting("frypdf.overlay.snake", "InitialSpeed", "Normal");
+            HighScore = (int)_settingsStore.GetSetting("com.fryworld.snake", "HighScore", 0.0);
+            WallCollision = _settingsStore.GetSetting("com.fryworld.snake", "WallCollision", true);
+            var speedPref = _settingsStore.GetSetting("com.fryworld.snake", "InitialSpeed", "Normal");
             SpeedMs = speedPref switch
             {
                 "Fast" => 90,
@@ -308,8 +308,8 @@ public partial class SnakeGameViewModel : ObservableObject, IDisposable
         if (Score > HighScore)
         {
             HighScore = Score;
-            _settingsStore?.SetSetting("frypdf.overlay.snake", "HighScore", (double)HighScore);
-            _settingsStore?.Save();
+            _settingsStore?.SetSetting("com.fryworld.snake", "HighScore", (double)HighScore);
+            _settingsStore?.SaveAsync();
         }
     }
 

@@ -1,5 +1,371 @@
 [
   {
+    "id": "com.fryworld.csharpstudio",
+    "name": "FrySharp C# Studio",
+    "publisher": "Code Fry Dev",
+    "version": "2.0.5",
+    "category": "Developer & Tools",
+    "description": "Full-featured C# studio & polyglot notebooks with Roslyn analysis, interactive visualization, and algorithmic execution.",
+    "longDescription": "Full-featured C# studio & polyglot notebooks with Roslyn analysis, interactive visualization, and algorithmic execution.",
+    "rating": 5.0,
+    "ratingCount": 10,
+    "installCount": 100,
+    "formattedSize": "15.0 MB",
+    "iconKind": "CodeBraces",
+    "iconColorHex": "#2563EB",
+    "license": "MIT",
+    "isVerified": true,
+    "isOfficial": true,
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.csharpstudio/v2.0.5/CSharpEditor.fryplugin",
+    "websiteUrl": "https://codefrydev.in",
+    "repositoryUrl": "https://github.com/codefrydev/FrySharp",
+    "tags": [
+      "developer & tools",
+      "fryworld",
+      "plugin"
+    ],
+    "highlights": [
+      "VS Code 5-Zone Layout",
+      "Polyglot Notebooks & Fry Kernel Protocol",
+      "Roslyn Diagnostic Analysis",
+      "Interactive Visualizers"
+    ],
+    "contributedFeatures": [
+      "Navigation: C# Code Studio",
+      "Navigation: Polyglot Notebook Studio",
+      "Command: Open C# Code Studio",
+      "Status Bar: { } C# Studio"
+    ],
+    "dependencies": [
+      "FryWorld.Sdk >= 0.0.2"
+    ],
+    "versions": [
+      {
+        "version": "2.0.5",
+        "releaseDate": "2026-10-15",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.csharpstudio/v2.0.5/CSharpEditor.fryplugin",
+        "sha256": "57b88d1d6c4b83c43d6a45020443fbafd6caf0b043130732efa2064b9d38c214",
+        "formattedSize": "15.0 MB",
+        "minHostVersion": "0.0.2",
+        "targetFramework": "net10.0",
+        "releaseNotes": "Initial official release targeting FryWorld.Sdk v0.0.2."
+      }
+    ]
+  },
+  {
+    "id": "com.fryworld.imageeditor",
+    "name": "FryImage Studio",
+    "publisher": "Code Fry Dev",
+    "version": "3.1.0",
+    "category": "Creative & Design",
+    "description": "Vector illustration & bitmap canvas layout studio with layers, raster filters, and SVG export.",
+    "longDescription": "Vector illustration & bitmap canvas layout studio with layers, raster filters, and SVG export.",
+    "rating": 5.0,
+    "ratingCount": 10,
+    "installCount": 100,
+    "formattedSize": "697 KB",
+    "iconKind": "Palette",
+    "iconColorHex": "#DC2626",
+    "license": "MIT",
+    "isVerified": true,
+    "isOfficial": true,
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.imageeditor/v3.1.0/ImageEditor.fryplugin",
+    "websiteUrl": "https://codefrydev.in",
+    "repositoryUrl": "https://github.com/codefrydev/FryImage",
+    "tags": [
+      "creative & design",
+      "fryworld",
+      "plugin"
+    ],
+    "highlights": [
+      "Advanced Layer Blending",
+      "Vector Shapes & Paths",
+      "Color Adjustments & Retouching",
+      "Lossless SVG/PNG Export"
+    ],
+    "contributedFeatures": [
+      "Navigation: Image Studio",
+      "Command: Open Image Studio",
+      "Overlay: Floating Image Canvas",
+      "Status Bar: Palette Widget"
+    ],
+    "dependencies": [
+      "FryWorld.Sdk >= 0.0.2"
+    ],
+    "versions": [
+      {
+        "version": "3.1.0",
+        "releaseDate": "2026-10-15",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.imageeditor/v3.1.0/ImageEditor.fryplugin",
+        "sha256": "54df93fe6de859142bbb29506f7f5c7944eff0bb9dc47af87b3e5a3f305a981d",
+        "formattedSize": "697 KB",
+        "minHostVersion": "0.0.2",
+        "targetFramework": "net10.0",
+        "releaseNotes": "Initial official release targeting FryWorld.Sdk v0.0.2."
+      }
+    ]
+  },
+  {
+    "id": "com.fryworld.snake",
+    "name": "Fry Snake",
+    "publisher": "Code Fry Dev",
+    "version": "1.0.0",
+    "category": "Games",
+    "description": "60+ FPS classic retro arcade Snake game floating overlay.",
+    "longDescription": "60+ FPS classic retro arcade Snake game floating overlay.",
+    "rating": 5.0,
+    "ratingCount": 10,
+    "installCount": 100,
+    "formattedSize": "21 KB",
+    "iconKind": "GamepadVariant",
+    "iconColorHex": "#D97706",
+    "license": "MIT",
+    "isVerified": true,
+    "isOfficial": true,
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.snake/v1.0.0/Snake.fryplugin",
+    "websiteUrl": "https://codefrydev.in",
+    "repositoryUrl": "https://github.com/codefrydev/PDFCreator-resources",
+    "tags": [
+      "games",
+      "fryworld",
+      "plugin"
+    ],
+    "highlights": [
+      "60 FPS High-Refresh Engine",
+      "Multiple Speed Tiers (Normal, Fast, Zen)",
+      "Wall Collision Modes",
+      "Score Tracking"
+    ],
+    "contributedFeatures": [
+      "Overlay: Floating Snake Game",
+      "Command: Play Snake Game",
+      "Status Bar: \ud83d\udc0d Snake"
+    ],
+    "dependencies": [
+      "FryWorld.Sdk >= 0.0.2"
+    ],
+    "versions": [
+      {
+        "version": "1.0.0",
+        "releaseDate": "2026-10-15",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.snake/v1.0.0/Snake.fryplugin",
+        "sha256": "d69f3ff2200ba9b62186e4bb5076277e321be98b5542b79ba954d41318f24813",
+        "formattedSize": "21 KB",
+        "minHostVersion": "0.0.2",
+        "targetFramework": "net10.0",
+        "releaseNotes": "Initial official release targeting FryWorld.Sdk v0.0.2."
+      }
+    ]
+  },
+  {
+    "id": "com.fryworld.chess",
+    "name": "Fry Chess",
+    "publisher": "Code Fry Dev",
+    "version": "1.0.0",
+    "category": "Games",
+    "description": "2-Player & Minimax tactical AI grandmaster chess overlay.",
+    "longDescription": "2-Player & Minimax tactical AI grandmaster chess overlay.",
+    "rating": 5.0,
+    "ratingCount": 10,
+    "installCount": 100,
+    "formattedSize": "38 KB",
+    "iconKind": "ChessKnight",
+    "iconColorHex": "#059669",
+    "license": "MIT",
+    "isVerified": true,
+    "isOfficial": true,
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.chess/v1.0.0/Chess.fryplugin",
+    "websiteUrl": "https://codefrydev.in",
+    "repositoryUrl": "https://github.com/codefrydev/PDFCreator-resources",
+    "tags": [
+      "games",
+      "fryworld",
+      "plugin"
+    ],
+    "highlights": [
+      "Minimax Tactical AI",
+      "Emerald & Slate Themes",
+      "Move History & Move Hints",
+      "Material Advantage Tracker"
+    ],
+    "contributedFeatures": [
+      "Overlay: Floating Chess Game",
+      "Command: Play Chess Game",
+      "Status Bar: \u265f\ufe0f Chess"
+    ],
+    "dependencies": [
+      "FryWorld.Sdk >= 0.0.2"
+    ],
+    "versions": [
+      {
+        "version": "1.0.0",
+        "releaseDate": "2026-10-15",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.chess/v1.0.0/Chess.fryplugin",
+        "sha256": "01f91058c4c333d411202b5cdea1672b6de6ae3bce518baa07d90f93fd195c78",
+        "formattedSize": "38 KB",
+        "minHostVersion": "0.0.2",
+        "targetFramework": "net10.0",
+        "releaseNotes": "Initial official release targeting FryWorld.Sdk v0.0.2."
+      }
+    ]
+  },
+  {
+    "id": "com.fryworld.tictactoe",
+    "name": "Fry TicTacToe",
+    "publisher": "Code Fry Dev",
+    "version": "1.0.0",
+    "category": "Games",
+    "description": "Minimax AI neon tactical duel overlay with 2-player pass-and-play.",
+    "longDescription": "Minimax AI neon tactical duel overlay with 2-player pass-and-play.",
+    "rating": 5.0,
+    "ratingCount": 10,
+    "installCount": 100,
+    "formattedSize": "19 KB",
+    "iconKind": "Grid",
+    "iconColorHex": "#DB2777",
+    "license": "MIT",
+    "isVerified": true,
+    "isOfficial": true,
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.tictactoe/v1.0.0/TicTacToe.fryplugin",
+    "websiteUrl": "https://codefrydev.in",
+    "repositoryUrl": "https://github.com/codefrydev/PDFCreator-resources",
+    "tags": [
+      "games",
+      "fryworld",
+      "plugin"
+    ],
+    "highlights": [
+      "Smart AI Opponent",
+      "2-Player Pass-and-Play",
+      "Sound Effects",
+      "Score Board"
+    ],
+    "contributedFeatures": [
+      "Overlay: Floating Tic-Tac-Toe",
+      "Command: Play Tic-Tac-Toe",
+      "Status Bar: \ud83c\udfae Tic-Tac-Toe"
+    ],
+    "dependencies": [
+      "FryWorld.Sdk >= 0.0.2"
+    ],
+    "versions": [
+      {
+        "version": "1.0.0",
+        "releaseDate": "2026-10-15",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.tictactoe/v1.0.0/TicTacToe.fryplugin",
+        "sha256": "455fd784e3ff0177c541cbb3d2de79b2a5d6ed4f1a80409f6dc0c18b9bba8abd",
+        "formattedSize": "19 KB",
+        "minHostVersion": "0.0.2",
+        "targetFramework": "net10.0",
+        "releaseNotes": "Initial official release targeting FryWorld.Sdk v0.0.2."
+      }
+    ]
+  },
+  {
+    "id": "com.fryworld.telemetry",
+    "name": "Fry Telemetry HUD",
+    "publisher": "Code Fry Dev",
+    "version": "1.0.0",
+    "category": "Utility",
+    "description": "Real-time GC memory allocation & process runtime diagnostic HUD.",
+    "longDescription": "Real-time GC memory allocation & process runtime diagnostic HUD.",
+    "rating": 5.0,
+    "ratingCount": 10,
+    "installCount": 100,
+    "formattedSize": "13 KB",
+    "iconKind": "Speedometer",
+    "iconColorHex": "#0891B2",
+    "license": "MIT",
+    "isVerified": true,
+    "isOfficial": true,
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.telemetry/v1.0.0/Telemetry.fryplugin",
+    "websiteUrl": "https://codefrydev.in",
+    "repositoryUrl": "https://github.com/codefrydev/PDFCreator-resources",
+    "tags": [
+      "utility",
+      "fryworld",
+      "plugin"
+    ],
+    "highlights": [
+      "Real-Time Memory Metrics",
+      "Aggressive GC Trimming Action",
+      "System Architecture & OS Info",
+      "Floating HUD"
+    ],
+    "contributedFeatures": [
+      "Overlay: Floating Telemetry HUD",
+      "Command: Toggle Telemetry HUD",
+      "Status Bar: \u26a1 HUD"
+    ],
+    "dependencies": [
+      "FryWorld.Sdk >= 0.0.2"
+    ],
+    "versions": [
+      {
+        "version": "1.0.0",
+        "releaseDate": "2026-10-15",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.telemetry/v1.0.0/Telemetry.fryplugin",
+        "sha256": "b4b55d98b11389bddd77fd23132f4f397824dd84e101b8fcaf8ad18d57757a31",
+        "formattedSize": "13 KB",
+        "minHostVersion": "0.0.2",
+        "targetFramework": "net10.0",
+        "releaseNotes": "Initial official release targeting FryWorld.Sdk v0.0.2."
+      }
+    ]
+  },
+  {
+    "id": "com.fryworld.scratchpad",
+    "name": "Fry Scratchpad",
+    "publisher": "Code Fry Dev",
+    "version": "1.0.0",
+    "category": "Productivity",
+    "description": "Floating Markdown workspace scratchpad with word/character counts and timestamps.",
+    "longDescription": "Floating Markdown workspace scratchpad with word/character counts and timestamps.",
+    "rating": 5.0,
+    "ratingCount": 10,
+    "installCount": 100,
+    "formattedSize": "13 KB",
+    "iconKind": "NotebookEdit",
+    "iconColorHex": "#EA580C",
+    "license": "MIT",
+    "isVerified": true,
+    "isOfficial": true,
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.scratchpad/v1.0.0/Scratchpad.fryplugin",
+    "websiteUrl": "https://codefrydev.in",
+    "repositoryUrl": "https://github.com/codefrydev/PDFCreator-resources",
+    "tags": [
+      "productivity",
+      "fryworld",
+      "plugin"
+    ],
+    "highlights": [
+      "Markdown Note Taking",
+      "Live Word & Character Counter",
+      "Instant Timestamp Generator",
+      "Floating Card Overlay"
+    ],
+    "contributedFeatures": [
+      "Overlay: Floating Review Scratchpad",
+      "Command: Toggle Scratchpad",
+      "Status Bar: \ud83d\udcdd Notes"
+    ],
+    "dependencies": [
+      "FryWorld.Sdk >= 0.0.2"
+    ],
+    "versions": [
+      {
+        "version": "1.0.0",
+        "releaseDate": "2026-10-15",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.scratchpad/v1.0.0/Scratchpad.fryplugin",
+        "sha256": "c1e4315fd2fba464b79091c29b30dde661ee3bf6dac79eacd11c825d322d621a",
+        "formattedSize": "13 KB",
+        "minHostVersion": "0.0.2",
+        "targetFramework": "net10.0",
+        "releaseNotes": "Initial official release targeting FryWorld.Sdk v0.0.2."
+      }
+    ]
+  },
+  {
     "id": "com.frypdf.plugin.csharpeditor",
     "name": "C# Code Studio",
     "publisher": "Code Fry Dev",

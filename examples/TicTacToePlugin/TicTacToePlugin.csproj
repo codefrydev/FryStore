@@ -37,7 +37,7 @@
     ====================================================================================================
   -->
   <ItemGroup>
-    <PackageReference Include="FryPdf.PluginSdk" Version="0.0.8" />
+    <PackageReference Include="FryWorld.Sdk" Version="0.0.2" />
   </ItemGroup>
 
   <ItemGroup>

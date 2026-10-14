@@ -4,19 +4,19 @@ using System.Threading;
 using System.Threading.Tasks;
 using Avalonia.Controls;
 using CommunityToolkit.Mvvm.Input;
-using PdfEditorApp.Core.Plugins;
-using PdfEditorApp.Core.Plugins.Descriptors;
-using PdfEditorApp.Core.Plugins.Manifests;
+using FryWorld.Sdk.Descriptors;
+using FryWorld.Sdk.Models;
+using FryWorld.Sdk.Plugins;
+using FryWorld.Sdk.Services;
 
 namespace PdfEditorApp.Plugins.Telemetry;
 
 /// <summary>
-/// Plugin contributing a live document diagnostics & memory telemetry HUD targeting 'shell.overlay'.
-/// Uses OverlayChromeMode.StandardCard for automatic Material Design 3 frame and dragging physics.
+/// Plugin contributing a live diagnostics & memory telemetry HUD targeting the shell overlay.
 /// </summary>
 public class DocumentTelemetryPlugin : IFryPlugin
 {
-    public string Id => "frypdf.overlay.telemetry";
+    public string Id => "com.fryworld.telemetry";
     public string Name => "Document Telemetry HUD";
     public Version Version => new(1, 0, 0);
     public IReadOnlyList<Type> RequiredServices => Array.Empty<Type>();
@@ -25,93 +25,62 @@ public class DocumentTelemetryPlugin : IFryPlugin
 
     public Task ApplyAsync(IFryPluginContext ctx, CancellationToken ct = default)
     {
-        // 1. Register Overlay with StandardCard chrome
-        ctx.RegisterOverlay(new OverlayDescriptor
+        void OpenTelemetry()
+        {
+            var fryWorldVmType = Type.GetType("FryWorld.ViewModels.MainViewModel, FryWorld");
+            if (fryWorldVmType != null)
+            {
+                var mainVm = ctx.GetService(fryWorldVmType);
+                fryWorldVmType.GetMethod("NavigateToPlugin")?.Invoke(mainVm, ["com.fryworld.telemetry"]);
+            }
+        }
+
+        // 1. Register Overlay
+        var overlayReg = ctx.RegisterOverlay(new OverlayDescriptor
         {
             Id = Id,
             Title = "⚡ Telemetry HUD",
-            Slot = "shell.overlay",
             DefaultWidth = 320,
             DefaultHeight = 250,
-            InitialX = null,
-            InitialY = 160,
-            IsDraggable = true,
-            IsMinimizable = true,
-            IsClosable = true,
+            MinWidth = 260,
+            MinHeight = 200,
             IconKind = "ChartTimelineVariant",
-            ChromeMode = OverlayChromeMode.StandardCard,
-            ViewType = typeof(DocumentTelemetryView),
-            ViewModelType = typeof(DocumentTelemetryViewModel),
-            ViewFactory = sp => new DocumentTelemetryView
+            AutoOpenOnMount = false,
+            ViewFactory = () => new DocumentTelemetryView
             {
-                DataContext = new DocumentTelemetryViewModel(sp)
-            },
-            ViewModelFactory = sp => new DocumentTelemetryViewModel(sp)
+                DataContext = new DocumentTelemetryViewModel(ctx)
+            }
         });
 
         // 2. Register Command Palette
-        ctx.RegisterCommand(new CommandPaletteDescriptor
+        var cmdReg = ctx.RegisterCommand(new CommandPaletteDescriptor
         {
             Id = "cmd.overlay.telemetry",
-            Title = "Toggle Telemetry HUD (Shell Overlay)",
-            Subtitle = "Display real-time memory and document engine diagnostics",
-            Category = "Shell Overlays",
+            Title = "Toggle Telemetry HUD",
+            Subtitle = "Display real-time memory and engine diagnostics",
+            Category = "Diagnostics",
             IconKind = "ChartTimelineVariant",
-            Shortcut = "Ctrl+Alt+T",
-            Order = 92,
-            Action = sp =>
-            {
-                if (sp.GetService(typeof(IOverlayRegistry)) is IOverlayRegistry reg)
-                {
-                    reg.ToggleOverlay(Id);
-                }
-            }
+            ShortcutKey = "Ctrl+Alt+T",
+            Command = new RelayCommand(OpenTelemetry)
         });
 
         // 3. Register Footer Status Bar Widget
-        ctx.RegisterStatusBarWidget(new StatusBarWidgetDescriptor
+        var statusReg = ctx.RegisterStatusBarWidget(new StatusBarWidgetDescriptor
         {
-            WidgetId = "frypdf.status.telemetry",
-            Alignment = StatusBarAlignment.Right,
+            Id = "fryworld.status.telemetry",
+            Label = "⚡ HUD",
+            Tooltip = "Toggle Document Telemetry HUD",
+            AlignRight = true,
             Order = 13,
-            ToolTip = "Toggle Document Telemetry HUD",
-            Factory = sp =>
-            {
-                var reg = sp.GetService(typeof(IOverlayRegistry)) as IOverlayRegistry;
-                return new Button
-                {
-                    Content = "⚡ HUD",
-                    Command = new RelayCommand(() => reg?.ToggleOverlay(Id))
-                };
-            }
-        });
-
-        // 4. Register Ribbon Action in View Tab
-        ctx.RegisterRibbonAction(new RibbonActionDescriptor
-        {
-            Id = "frypdf.ribbon.action.telemetry",
-            TabId = "view",
-            GroupId = "plugins",
-            Label = "Telemetry HUD",
-            Tooltip = "Open real-time diagnostics HUD in shell.overlay",
-            IconKind = "ChartTimelineVariant",
-            Order = 54,
-            Action = sp =>
-            {
-                if (sp.GetService(typeof(IOverlayRegistry)) is IOverlayRegistry reg)
-                {
-                    reg.ToggleOverlay(Id);
-                }
-            }
+            ClickCommand = new RelayCommand(OpenTelemetry)
         });
 
         // Clean rollback on unload
         ctx.RegisterEffect(() =>
         {
-            if (ctx.TryGetService<IOverlayRegistry>(out var reg))
-            {
-                reg.HideOverlay(Id);
-            }
+            overlayReg.Dispose();
+            cmdReg.Dispose();
+            statusReg.Dispose();
         });
 
         return Task.CompletedTask;

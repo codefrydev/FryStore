@@ -6,53 +6,53 @@ using Avalonia.Controls;
 using CommunityToolkit.Mvvm.Input;
 using FryPdf.Plugin.Chess.ViewModels;
 using FryPdf.Plugin.Chess.Views;
-using PdfEditorApp.Core.Plugins;
-using PdfEditorApp.Core.Plugins.Descriptors;
-using PdfEditorApp.Core.Plugins.Manifests;
+using FryWorld.Sdk.Descriptors;
+using FryWorld.Sdk.Models;
+using FryWorld.Sdk.Plugins;
+using FryWorld.Sdk.Services;
 
 namespace FryPdf.Plugin.Chess;
 
 /// <summary>
 /// Modular plugin contributing an interactive, draggable Chess game (CPU vs User)
-/// targeting the 'shell.overlay' slot with M3 Expressive aesthetics.
+/// targeting the shell overlay with M3 Expressive aesthetics.
 /// </summary>
 public class ChessPlugin : IFryPlugin
 {
-    public string Id => "com.frypdf.plugin.chess";
+    public string Id => "com.fryworld.chess";
     public string Name => "Chess";
     public Version Version => new(1, 0, 0);
 
     public IReadOnlyList<Type> RequiredServices => Array.Empty<Type>();
-    public IReadOnlyList<Type> ProvidedServices => Array.Empty<Type>();
 
     public IReadOnlyDictionary<string, PluginSettingDefinition>? SettingsSchema => new Dictionary<string, PluginSettingDefinition>
     {
         ["AiDifficulty"] = new()
         {
-            Type = "select",
+            Type = PluginSettingType.Select,
             Label = "CPU Difficulty",
             Description = "Tactical depth and calculation level of the computer opponent",
             DefaultValue = "Medium",
-            Options = ["Easy", "Medium", "Hard"]
+            Options = new() { "Easy", "Medium", "Hard" }
         },
         ["BoardTheme"] = new()
         {
-            Type = "select",
+            Type = PluginSettingType.Select,
             Label = "Board Theme",
             Description = "Visual color styling of the 8x8 chessboard",
             DefaultValue = "Emerald",
-            Options = ["Emerald", "ClassicWood", "MidnightSlate"]
+            Options = new() { "Emerald", "ClassicWood", "MidnightSlate" }
         },
         ["ShowLegalMoveHints"] = new()
         {
-            Type = "boolean",
+            Type = PluginSettingType.Boolean,
             Label = "Highlight Legal Moves",
             Description = "Display target indicators on valid destination squares",
             DefaultValue = true
         },
         ["ShowCoordinates"] = new()
         {
-            Type = "boolean",
+            Type = PluginSettingType.Boolean,
             Label = "Show Board Coordinates",
             Description = "Display ranks (1-8) and files (a-h) along the board edge",
             DefaultValue = true
@@ -61,98 +61,62 @@ public class ChessPlugin : IFryPlugin
 
     public Task ApplyAsync(IFryPluginContext ctx, CancellationToken ct = default)
     {
-        // 1. Register Floating Shell Overlay with StandardCard chrome (Auto M3 titlebar, pin, minimize, close)
+        void OpenChess()
+        {
+            var fryWorldVmType = Type.GetType("FryWorld.ViewModels.MainViewModel, FryWorld");
+            if (fryWorldVmType != null)
+            {
+                var mainVm = ctx.GetService(fryWorldVmType);
+                fryWorldVmType.GetMethod("NavigateToPlugin")?.Invoke(mainVm, ["com.fryworld.chess"]);
+            }
+        }
+
+        // 1. Register Shell Overlay Descriptor
         var overlayReg = ctx.RegisterOverlay(new OverlayDescriptor
         {
             Id = Id,
             Title = "♟️ Chess",
-            Slot = "shell.overlay",
-            DefaultWidth = 410,
-            DefaultHeight = 540,
-            InitialX = null,
-            InitialY = 90,
-            IsDraggable = true,
-            IsMinimizable = true,
-            IsClosable = true,
+            DefaultWidth = 420,
+            DefaultHeight = 560,
+            MinWidth = 360,
+            MinHeight = 480,
             IconKind = "ChessKnight",
-            ChromeMode = OverlayChromeMode.StandardCard,
-            ViewType = typeof(ChessView),
-            ViewModelType = typeof(ChessViewModel),
-            ViewFactory = _ => new ChessView
+            AutoOpenOnMount = false,
+            ViewFactory = () => new ChessView
             {
                 DataContext = new ChessViewModel()
-            },
-            ViewModelFactory = _ => new ChessViewModel()
+            }
         });
 
         // 2. Register Command in Command Palette (Ctrl+Alt+C)
         var cmdReg = ctx.RegisterCommand(new CommandPaletteDescriptor
         {
             Id = "cmd.overlay.chess",
-            Title = "Play Chess (Shell Overlay)",
+            Title = "Play Chess Game",
             Subtitle = "Launch floating Chess game with CPU opponent (Easy, Medium, Hard)",
-            Category = "Shell Overlays",
+            Category = "Games",
             IconKind = "ChessKnight",
-            Shortcut = "Ctrl+Alt+C",
-            Order = 95,
-            Action = sp =>
-            {
-                if (sp.GetService(typeof(IOverlayRegistry)) is IOverlayRegistry reg)
-                {
-                    reg.ToggleOverlay(Id);
-                }
-            }
+            ShortcutKey = "Ctrl+Alt+C",
+            Command = new RelayCommand(OpenChess)
         });
 
         // 3. Register Footer Status Bar Widget (Clickable ♟️ Chess pill)
         var statusReg = ctx.RegisterStatusBarWidget(new StatusBarWidgetDescriptor
         {
-            WidgetId = "frypdf.status.chess",
-            Alignment = StatusBarAlignment.Right,
-            Order = 15,
-            ToolTip = "Play Chess (Floating Shell Overlay)",
-            Factory = sp =>
-            {
-                var reg = sp.GetService(typeof(IOverlayRegistry)) as IOverlayRegistry;
-                return new Button
-                {
-                    Content = "♟️ Chess",
-                    Command = new RelayCommand(() => reg?.ToggleOverlay(Id))
-                };
-            }
+            Id = "fryworld.status.chess",
+            Label = "♟️ Chess",
+            Tooltip = "Play Chess (Floating Shell Overlay)",
+            AlignRight = true,
+            Order = 16,
+            ClickCommand = new RelayCommand(OpenChess)
         });
 
-        // 4. Register Quick-Action Pill in Ribbon's 'View' Tab
-        var ribbonReg = ctx.RegisterRibbonAction(new RibbonActionDescriptor
-        {
-            Id = "frypdf.ribbon.action.chess",
-            TabId = "view",
-            GroupId = "plugins",
-            Label = "Chess",
-            Tooltip = "Open floating Chess game overlay",
-            IconKind = "ChessKnight",
-            Order = 55,
-            Action = sp =>
-            {
-                if (sp.GetService(typeof(IOverlayRegistry)) is IOverlayRegistry reg)
-                {
-                    reg.ToggleOverlay(Id);
-                }
-            }
-        });
-
-        // 5. Register Reversible Effects for 100% Clean LIFO Teardown
+        // 4. Reversible effects for clean unmount
         ctx.RegisterEffect(() =>
         {
             overlayReg.Dispose();
             cmdReg.Dispose();
             statusReg.Dispose();
-            ribbonReg.Dispose();
-
-            if (ctx.TryGetService<IOverlayRegistry>(out var reg))
-            {
-                reg.HideOverlay(Id);
-            }
         });
 
         return Task.CompletedTask;
