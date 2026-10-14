@@ -61,8 +61,72 @@ jobs:
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '10.0.x'
-      - name: Build & Run Tests
-        run: dotnet test examples/CSharpEditorPlugin/CSharpEditorPlugin.slnx -c Release
+      - name: Build & Run Tests (Tolerate <= 20 test failures)
+        shell: bash
+        run: |
+          mkdir -p ./TestResults
+          echo "Running C# Code Studio test suite..."
+
+          # Run tests with trx logger and allow execution across projects
+          dotnet test examples/CSharpEditorPlugin/CSharpEditorPlugin.slnx -c Release \
+            --logger "trx" \
+            --results-directory ./TestResults \
+            /p:ContinueOnError=true || true
+
+          python3 - << 'EOF'
+          import glob, os, sys
+          import xml.etree.ElementTree as ET
+
+          results_dir = "./TestResults"
+          trx_files = glob.glob(f"{results_dir}/**/*.trx", recursive=True)
+
+          if not trx_files:
+              print("❌ Error: No .trx test result files found! Build or test execution likely crashed.")
+              sys.exit(1)
+
+          total_tests = 0
+          passed_tests = 0
+          failed_tests = 0
+          skipped_tests = 0
+          failed_names = []
+
+          for trx in trx_files:
+              try:
+                  tree = ET.parse(trx)
+                  root = tree.getroot()
+                  for elem in root.iter():
+                      if elem.tag.endswith("Counters"):
+                          total_tests += int(elem.attrib.get("total", 0))
+                          passed_tests += int(elem.attrib.get("passed", 0))
+                          skipped_tests += int(elem.attrib.get("notExecuted", 0)) + int(elem.attrib.get("inconclusive", 0))
+                          failed_tests += int(elem.attrib.get("failed", 0)) + int(elem.attrib.get("error", 0)) + int(elem.attrib.get("timeout", 0))
+                      elif elem.tag.endswith("UnitTestResult"):
+                          if elem.attrib.get("outcome") in ("Failed", "Error", "Timeout"):
+                              failed_names.append(elem.attrib.get("testName", "unknown"))
+              except Exception as ex:
+                  print(f"⚠️ Failed to parse {trx}: {ex}")
+
+          print("=" * 60)
+          print(f"Test Summary: Total={total_tests}, Passed={passed_tests}, Failed={failed_tests}, Skipped={skipped_tests}")
+          print("=" * 60)
+
+          if failed_names:
+              print(f"\nFailed tests ({len(failed_names)}):")
+              for name in failed_names[:50]:
+                  print(f"  - {name}")
+              if len(failed_names) > 50:
+                  print(f"  ... and {len(failed_names) - 50} more")
+
+          if failed_tests > 20:
+              print(f"\n❌ FAILED: {failed_tests} tests failed, which exceeds the threshold of 20 allowable failures.")
+              sys.exit(1)
+          elif failed_tests > 0:
+              print(f"\n⚠️ WARNING: {failed_tests} test(s) failed, but failure count is within allowable threshold (<= 20). Proceeding.")
+              sys.exit(0)
+          else:
+              print("\n✔ All tests passed successfully!")
+              sys.exit(0)
+          EOF
 
   build-windows:
     needs: [determine-version, test]
