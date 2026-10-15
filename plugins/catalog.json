@@ -151,7 +151,7 @@
     "contributedFeatures": [
       "Overlay: Floating Snake Game",
       "Command: Play Snake Game",
-      "Status Bar: \ud83d\udc0d Snake"
+      "Status Bar: 🐍 Snake"
     ],
     "dependencies": [
       "FryWorld.Sdk >= 0.1.0"
@@ -169,6 +169,61 @@
       }
     ],
     "sha256": "dc407692647bbe648b0855544781ef599bfbfd86834f26fcfcde9c15601eaff8"
+  },
+  {
+    "id": "com.fryworld.musicplayer",
+    "name": "Fry Music",
+    "publisher": "Code Fry Dev",
+    "version": "1.0.0",
+    "category": "Tools & Productivity",
+    "description": "Floating playlist-based M3 Expressive music player with live equalizer visualizer, tactile seek/volume, queue search, and zero-lag background metadata scanning.",
+    "longDescription": "Floating playlist-based M3 Expressive music player with live equalizer visualizer, tactile seek/volume, queue search, and zero-lag background metadata scanning.",
+    "rating": 5.0,
+    "ratingCount": 14,
+    "installCount": 120,
+    "formattedSize": "7.1 MB",
+    "iconKind": "MusicNote",
+    "iconColorHex": "#F59E0B",
+    "license": "MIT",
+    "isVerified": true,
+    "isOfficial": true,
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.musicplayer/v1.0.0/MusicPlayer.fryplugin",
+    "websiteUrl": "https://codefrydev.in",
+    "repositoryUrl": "https://github.com/codefrydev/PDFCreator-resources",
+    "tags": [
+      "music",
+      "audio",
+      "media",
+      "fryworld",
+      "plugin"
+    ],
+    "highlights": [
+      "Triple View Modes: Now Playing Focus, Full Queue Studio & Compact Mini Widget",
+      "Hero Album Art Showcase with Live Animated 5-Bar Equalizer",
+      "Full Playlist Library with Real-time Search & Docked Persistent Mini-Bar",
+      "SoundFlow & MiniAudio Native High-Fidelity Audio Engine"
+    ],
+    "contributedFeatures": [
+      "Overlay: 🎵 Music Player",
+      "Command: Toggle Music Player",
+      "Status Bar: 🎵 Music"
+    ],
+    "dependencies": [
+      "FryWorld.Sdk >= 0.1.0"
+    ],
+    "versions": [
+      {
+        "version": "1.0.0",
+        "releaseDate": "2026-10-15",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.musicplayer/v1.0.0/MusicPlayer.fryplugin",
+        "sha256": "b4b47741a032422f6130fd1744787e7aa6aef5110d39020e06ac93cd8cc79234",
+        "formattedSize": "7.1 MB",
+        "minHostVersion": "0.1.0",
+        "targetFramework": "net10.0",
+        "releaseNotes": "Official release of Fry Music Player consuming FryWorld.Sdk v0.1.0 with native SoundFlow & MiniAudio high-res playback."
+      }
+    ],
+    "sha256": "b4b47741a032422f6130fd1744787e7aa6aef5110d39020e06ac93cd8cc79234"
   },
   {
     "id": "com.fryworld.chess",
@@ -891,14 +946,14 @@
         "version": "1.0.0",
         "releaseDate": "2026-10-15",
         "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/frypdf.overlay.musicplayer/v1.0.0/MusicPlayer.fryplugin",
-        "sha256": "f7ee70bf2d802140c6906d53d59531d0cd14d492814b29a894547b9544238e9e",
+        "sha256": "b4b47741a032422f6130fd1744787e7aa6aef5110d39020e06ac93cd8cc79234",
         "formattedSize": "7.1 MB",
         "minHostVersion": "1.0.0",
         "targetFramework": "net10.0",
         "releaseNotes": "Release v1.0.0 of Music Player."
       }
     ],
-    "sha256": "f7ee70bf2d802140c6906d53d59531d0cd14d492814b29a894547b9544238e9e"
+    "sha256": "b4b47741a032422f6130fd1744787e7aa6aef5110d39020e06ac93cd8cc79234"
   },
   {
     "id": "frypdf.overlay.imageeditor",
