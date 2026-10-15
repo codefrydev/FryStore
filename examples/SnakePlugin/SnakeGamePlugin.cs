@@ -54,10 +54,11 @@ public class SnakeGamePlugin : IFryPlugin
         {
             Id = Id,
             Title = "🐍 Snake",
-            DefaultWidth = 320,
-            DefaultHeight = 420,
-            MinWidth = 280,
-            MinHeight = 360,
+            DefaultWidth = 328,
+            DefaultHeight = 454,
+            MinWidth = 300,
+            MinHeight = 400,
+            IsResizable = false,
             IconKind = "GamepadVariantOutline",
             AutoOpenOnMount = false,
             ViewFactory = () => new SnakeGameView

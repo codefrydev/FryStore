@@ -128,7 +128,7 @@
     "rating": 5.0,
     "ratingCount": 10,
     "installCount": 100,
-    "formattedSize": "22 KB",
+    "formattedSize": "20 KB",
     "iconKind": "GamepadVariant",
     "iconColorHex": "#D97706",
     "license": "MIT",
@@ -161,14 +161,14 @@
         "version": "1.0.0",
         "releaseDate": "2026-10-15",
         "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.snake/v1.0.0/Snake.fryplugin",
-        "sha256": "7e8cdef79bd2170997c64260d8e949f068ddec51104e1b735a05ea557e4e4dc6",
-        "formattedSize": "22 KB",
+        "sha256": "dc407692647bbe648b0855544781ef599bfbfd86834f26fcfcde9c15601eaff8",
+        "formattedSize": "20 KB",
         "minHostVersion": "0.1.0",
         "targetFramework": "net10.0",
         "releaseNotes": "Initial official release targeting FryWorld.Sdk v0.0.2."
       }
     ],
-    "sha256": "7e8cdef79bd2170997c64260d8e949f068ddec51104e1b735a05ea557e4e4dc6"
+    "sha256": "dc407692647bbe648b0855544781ef599bfbfd86834f26fcfcde9c15601eaff8"
   },
   {
     "id": "com.fryworld.chess",
@@ -695,7 +695,7 @@
     "rating": 5.0,
     "ratingCount": 128,
     "installCount": 4200,
-    "formattedSize": "21 KB",
+    "formattedSize": "20 KB",
     "iconKind": "GamepadVariantOutline",
     "iconColorHex": "#10B981",
     "license": "MIT",
@@ -730,14 +730,14 @@
         "version": "1.0.0",
         "releaseDate": "2026-09-20",
         "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/frypdf.overlay.snake/v1.0.0/Snake.fryplugin",
-        "sha256": "de6d90c6e9c0e674df696909e6c1aa0cebbe63eb1a77c69c7b462e0eb4c69cb8",
-        "formattedSize": "21 KB",
+        "sha256": "02c4fbb6ccea195035a898f1086a14935736fba878ba21abc7fc75c69aaf5844",
+        "formattedSize": "20 KB",
         "minHostVersion": "1.0.0",
         "targetFramework": "net10.0",
         "releaseNotes": "Release v1.0.0 of Retro Arcade Snake Game."
       }
     ],
-    "sha256": "de6d90c6e9c0e674df696909e6c1aa0cebbe63eb1a77c69c7b462e0eb4c69cb8"
+    "sha256": "02c4fbb6ccea195035a898f1086a14935736fba878ba21abc7fc75c69aaf5844"
   },
   {
     "id": "frypdf.overlay.scratchpad",
