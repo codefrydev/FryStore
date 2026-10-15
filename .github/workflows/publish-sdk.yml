@@ -120,7 +120,7 @@ jobs:
           path: |
             ./artifacts/*.nupkg
             ./artifacts/*.snupkg
-            ./plugins/*/*.fryplugin
+            ./plugins/**/*.fryplugin
           if-no-files-found: error
 
       - name: NuGet login (OIDC exchange for temporary API key)

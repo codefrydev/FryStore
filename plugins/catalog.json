@@ -10,7 +10,7 @@
     "rating": 5.0,
     "ratingCount": 10,
     "installCount": 100,
-    "formattedSize": "15.0 MB",
+    "formattedSize": "15.1 MB",
     "iconKind": "CodeBraces",
     "iconColorHex": "#2563EB",
     "license": "MIT",
@@ -37,20 +37,21 @@
       "Status Bar: { } C# Studio"
     ],
     "dependencies": [
-      "FryWorld.Sdk >= 0.0.2"
+      "FryWorld.Sdk >= 0.1.0"
     ],
     "versions": [
       {
         "version": "2.0.5",
         "releaseDate": "2026-10-15",
         "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.csharpstudio/v2.0.5/CSharpEditor.fryplugin",
-        "sha256": "57b88d1d6c4b83c43d6a45020443fbafd6caf0b043130732efa2064b9d38c214",
-        "formattedSize": "15.0 MB",
-        "minHostVersion": "0.0.2",
+        "sha256": "de98d5ea0e0d0698d5131a04961d0065dff012bbf5e7b456822c33383bf98144",
+        "formattedSize": "15.1 MB",
+        "minHostVersion": "0.1.0",
         "targetFramework": "net10.0",
-        "releaseNotes": "Initial official release targeting FryWorld.Sdk v0.0.2."
+        "releaseNotes": "Release 2.0.5: Decouples headless runtime engine into FrySharp.Core and introduces the FrySharp Sidecar JSON-RPC engine server. Enhances multi-language notebook execution stability for SQL, Java, Go, Rust, and C++ kernels with robust process launching, argument quoting, and isolated environment variable management. Eliminates UI thread stalls by refactoring activity and loading animations to asynchronous loops. Resolves async session restart and live diagnostics race conditions, and adds environment-gated test attributes for resilient cross-platform testing."
       }
-    ]
+    ],
+    "sha256": "de98d5ea0e0d0698d5131a04961d0065dff012bbf5e7b456822c33383bf98144"
   },
   {
     "id": "com.fryworld.imageeditor",
@@ -63,7 +64,7 @@
     "rating": 5.0,
     "ratingCount": 10,
     "installCount": 100,
-    "formattedSize": "697 KB",
+    "formattedSize": "699 KB",
     "iconKind": "Palette",
     "iconColorHex": "#DC2626",
     "license": "MIT",
@@ -90,20 +91,21 @@
       "Status Bar: Palette Widget"
     ],
     "dependencies": [
-      "FryWorld.Sdk >= 0.0.2"
+      "FryWorld.Sdk >= 0.1.0"
     ],
     "versions": [
       {
         "version": "3.1.0",
         "releaseDate": "2026-10-15",
         "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.imageeditor/v3.1.0/ImageEditor.fryplugin",
-        "sha256": "54df93fe6de859142bbb29506f7f5c7944eff0bb9dc47af87b3e5a3f305a981d",
-        "formattedSize": "697 KB",
-        "minHostVersion": "0.0.2",
+        "sha256": "11f73d1dd19cfcb71c866fb151477afca0d55a1d8603c46a20939f052bf1048b",
+        "formattedSize": "699 KB",
+        "minHostVersion": "0.1.0",
         "targetFramework": "net10.0",
-        "releaseNotes": "Initial official release targeting FryWorld.Sdk v0.0.2."
+        "releaseNotes": "Adds inpainting Remove tool, Shadows/Highlights and Black & White adjustments, Curves and Liquify engines, text warp Bezier distortion, expanded codecs (Adobe Grd/Abr/Patterns, FITS, PCX, KRA), OpenType typography features, color range selection, and enhanced studio workflows."
       }
-    ]
+    ],
+    "sha256": "11f73d1dd19cfcb71c866fb151477afca0d55a1d8603c46a20939f052bf1048b"
   },
   {
     "id": "com.fryworld.snake",
@@ -116,7 +118,7 @@
     "rating": 5.0,
     "ratingCount": 10,
     "installCount": 100,
-    "formattedSize": "21 KB",
+    "formattedSize": "22 KB",
     "iconKind": "GamepadVariant",
     "iconColorHex": "#D97706",
     "license": "MIT",
@@ -142,20 +144,21 @@
       "Status Bar: \ud83d\udc0d Snake"
     ],
     "dependencies": [
-      "FryWorld.Sdk >= 0.0.2"
+      "FryWorld.Sdk >= 0.1.0"
     ],
     "versions": [
       {
         "version": "1.0.0",
         "releaseDate": "2026-10-15",
         "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.snake/v1.0.0/Snake.fryplugin",
-        "sha256": "d69f3ff2200ba9b62186e4bb5076277e321be98b5542b79ba954d41318f24813",
-        "formattedSize": "21 KB",
-        "minHostVersion": "0.0.2",
+        "sha256": "7e8cdef79bd2170997c64260d8e949f068ddec51104e1b735a05ea557e4e4dc6",
+        "formattedSize": "22 KB",
+        "minHostVersion": "0.1.0",
         "targetFramework": "net10.0",
         "releaseNotes": "Initial official release targeting FryWorld.Sdk v0.0.2."
       }
-    ]
+    ],
+    "sha256": "7e8cdef79bd2170997c64260d8e949f068ddec51104e1b735a05ea557e4e4dc6"
   },
   {
     "id": "com.fryworld.chess",
@@ -168,7 +171,7 @@
     "rating": 5.0,
     "ratingCount": 10,
     "installCount": 100,
-    "formattedSize": "38 KB",
+    "formattedSize": "40 KB",
     "iconKind": "ChessKnight",
     "iconColorHex": "#059669",
     "license": "MIT",
@@ -194,20 +197,21 @@
       "Status Bar: \u265f\ufe0f Chess"
     ],
     "dependencies": [
-      "FryWorld.Sdk >= 0.0.2"
+      "FryWorld.Sdk >= 0.1.0"
     ],
     "versions": [
       {
         "version": "1.0.0",
         "releaseDate": "2026-10-15",
         "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.chess/v1.0.0/Chess.fryplugin",
-        "sha256": "01f91058c4c333d411202b5cdea1672b6de6ae3bce518baa07d90f93fd195c78",
-        "formattedSize": "38 KB",
-        "minHostVersion": "0.0.2",
+        "sha256": "36f5ec66ab2e7f95ddbc784dcbfe1647d6d15270899b222af77f5c5b59d56376",
+        "formattedSize": "40 KB",
+        "minHostVersion": "0.1.0",
         "targetFramework": "net10.0",
         "releaseNotes": "Initial official release targeting FryWorld.Sdk v0.0.2."
       }
-    ]
+    ],
+    "sha256": "36f5ec66ab2e7f95ddbc784dcbfe1647d6d15270899b222af77f5c5b59d56376"
   },
   {
     "id": "com.fryworld.tictactoe",
@@ -220,7 +224,7 @@
     "rating": 5.0,
     "ratingCount": 10,
     "installCount": 100,
-    "formattedSize": "19 KB",
+    "formattedSize": "20 KB",
     "iconKind": "Grid",
     "iconColorHex": "#DB2777",
     "license": "MIT",
@@ -246,20 +250,21 @@
       "Status Bar: \ud83c\udfae Tic-Tac-Toe"
     ],
     "dependencies": [
-      "FryWorld.Sdk >= 0.0.2"
+      "FryWorld.Sdk >= 0.1.0"
     ],
     "versions": [
       {
         "version": "1.0.0",
         "releaseDate": "2026-10-15",
         "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.tictactoe/v1.0.0/TicTacToe.fryplugin",
-        "sha256": "455fd784e3ff0177c541cbb3d2de79b2a5d6ed4f1a80409f6dc0c18b9bba8abd",
-        "formattedSize": "19 KB",
-        "minHostVersion": "0.0.2",
+        "sha256": "b201e941583c54e13ae7d9a55ba398ff8a9424493f6f0d90a24f62120b76f953",
+        "formattedSize": "20 KB",
+        "minHostVersion": "0.1.0",
         "targetFramework": "net10.0",
         "releaseNotes": "Initial official release targeting FryWorld.Sdk v0.0.2."
       }
-    ]
+    ],
+    "sha256": "b201e941583c54e13ae7d9a55ba398ff8a9424493f6f0d90a24f62120b76f953"
   },
   {
     "id": "com.fryworld.telemetry",
@@ -272,7 +277,7 @@
     "rating": 5.0,
     "ratingCount": 10,
     "installCount": 100,
-    "formattedSize": "13 KB",
+    "formattedSize": "14 KB",
     "iconKind": "Speedometer",
     "iconColorHex": "#0891B2",
     "license": "MIT",
@@ -298,20 +303,21 @@
       "Status Bar: \u26a1 HUD"
     ],
     "dependencies": [
-      "FryWorld.Sdk >= 0.0.2"
+      "FryWorld.Sdk >= 0.1.0"
     ],
     "versions": [
       {
         "version": "1.0.0",
         "releaseDate": "2026-10-15",
         "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.telemetry/v1.0.0/Telemetry.fryplugin",
-        "sha256": "b4b55d98b11389bddd77fd23132f4f397824dd84e101b8fcaf8ad18d57757a31",
-        "formattedSize": "13 KB",
-        "minHostVersion": "0.0.2",
+        "sha256": "0b1ea630cd80aa99065a6ff8e264fcc5deeebd38c4edb8fdc0c9ecc93d530b28",
+        "formattedSize": "14 KB",
+        "minHostVersion": "0.1.0",
         "targetFramework": "net10.0",
         "releaseNotes": "Initial official release targeting FryWorld.Sdk v0.0.2."
       }
-    ]
+    ],
+    "sha256": "0b1ea630cd80aa99065a6ff8e264fcc5deeebd38c4edb8fdc0c9ecc93d530b28"
   },
   {
     "id": "com.fryworld.scratchpad",
@@ -324,7 +330,7 @@
     "rating": 5.0,
     "ratingCount": 10,
     "installCount": 100,
-    "formattedSize": "13 KB",
+    "formattedSize": "15 KB",
     "iconKind": "NotebookEdit",
     "iconColorHex": "#EA580C",
     "license": "MIT",
@@ -350,20 +356,21 @@
       "Status Bar: \ud83d\udcdd Notes"
     ],
     "dependencies": [
-      "FryWorld.Sdk >= 0.0.2"
+      "FryWorld.Sdk >= 0.1.0"
     ],
     "versions": [
       {
         "version": "1.0.0",
         "releaseDate": "2026-10-15",
         "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.scratchpad/v1.0.0/Scratchpad.fryplugin",
-        "sha256": "c1e4315fd2fba464b79091c29b30dde661ee3bf6dac79eacd11c825d322d621a",
-        "formattedSize": "13 KB",
-        "minHostVersion": "0.0.2",
+        "sha256": "859c929b85c6108fa55ca3d98a1d5dcbee5821a442e9d379e447796a885c03c9",
+        "formattedSize": "15 KB",
+        "minHostVersion": "0.1.0",
         "targetFramework": "net10.0",
         "releaseNotes": "Initial official release targeting FryWorld.Sdk v0.0.2."
       }
-    ]
+    ],
+    "sha256": "859c929b85c6108fa55ca3d98a1d5dcbee5821a442e9d379e447796a885c03c9"
   },
   {
     "id": "com.frypdf.plugin.csharpeditor",
@@ -872,16 +879,16 @@
     "versions": [
       {
         "version": "1.0.0",
-        "releaseDate": "2026-09-20",
+        "releaseDate": "2026-10-15",
         "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/frypdf.overlay.musicplayer/v1.0.0/MusicPlayer.fryplugin",
-        "sha256": "409ec7c73b6403161c4ae2aac79f742b5c4bd28edaa2ac7c30eef721e9521b13",
+        "sha256": "f7ee70bf2d802140c6906d53d59531d0cd14d492814b29a894547b9544238e9e",
         "formattedSize": "7.1 MB",
         "minHostVersion": "1.0.0",
         "targetFramework": "net10.0",
         "releaseNotes": "Release v1.0.0 of Music Player."
       }
     ],
-    "sha256": "409ec7c73b6403161c4ae2aac79f742b5c4bd28edaa2ac7c30eef721e9521b13"
+    "sha256": "f7ee70bf2d802140c6906d53d59531d0cd14d492814b29a894547b9544238e9e"
   },
   {
     "id": "frypdf.overlay.imageeditor",

@@ -157,13 +157,17 @@ def package_single_plugin(plugin_dir: Path, target_version: str | None = None) -
             manifest_notes = manifest.get("releaseNotes")
             final_notes = manifest_notes or existing_notes or f"Release v{version} of {manifest.get('name', plugin_id)}."
 
+            min_host = manifest.get("minHostVersion")
+            if not min_host:
+                min_host = "0.1.0" if plugin_id.startswith("com.fryworld.") else "1.0.0"
+
             new_version_entry = {
                 "version": version,
                 "releaseDate": today_str,
                 "downloadUrl": version_download_url,
                 "sha256": sha256_hex,
                 "formattedSize": formatted_sz,
-                "minHostVersion": manifest.get("minHostVersion", "1.0.0"),
+                "minHostVersion": min_host,
                 "targetFramework": manifest.get("targetFramework", "net10.0"),
                 "releaseNotes": final_notes
             }
@@ -171,6 +175,8 @@ def package_single_plugin(plugin_dir: Path, target_version: str | None = None) -
             updated = False
             for item in catalog:
                 if item.get("id") == plugin_id:
+                    if plugin_id.startswith("com.fryworld."):
+                        item["dependencies"] = ["FryWorld.Sdk >= 0.1.0"]
                     versions_list = item.setdefault("versions", [])
 
                     # Find if version already exists
