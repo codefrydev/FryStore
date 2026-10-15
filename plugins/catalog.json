@@ -57,20 +57,20 @@
     "id": "com.fryworld.imageeditor",
     "name": "FryImage Studio",
     "publisher": "Code Fry Dev",
-    "version": "3.1.0",
+    "version": "3.2.0",
     "category": "Creative & Design",
     "description": "Vector illustration & bitmap canvas layout studio with layers, raster filters, and SVG export.",
     "longDescription": "Vector illustration & bitmap canvas layout studio with layers, raster filters, and SVG export.",
     "rating": 5.0,
     "ratingCount": 10,
     "installCount": 100,
-    "formattedSize": "699 KB",
+    "formattedSize": "766 KB",
     "iconKind": "Palette",
     "iconColorHex": "#DC2626",
     "license": "MIT",
     "isVerified": true,
     "isOfficial": true,
-    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.imageeditor/v3.1.0/ImageEditor.fryplugin",
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.imageeditor/v3.2.0/ImageEditor.fryplugin",
     "websiteUrl": "https://codefrydev.in",
     "repositoryUrl": "https://github.com/codefrydev/FryImage",
     "tags": [
@@ -95,6 +95,16 @@
     ],
     "versions": [
       {
+        "version": "3.2.0",
+        "releaseDate": "2026-10-15",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.imageeditor/v3.2.0/ImageEditor.fryplugin",
+        "sha256": "cc61d1ca394b43939890e8392ff4e7815e73a8b8319c68706592dc32e78c6c1e",
+        "formattedSize": "766 KB",
+        "minHostVersion": "0.1.0",
+        "targetFramework": "net10.0",
+        "releaseNotes": "Adds modular dock workspace layout with tab grouping, edge splitting, and multi-zone docking; restores palette panels (Brushes, Actions, Adjustments, Gradients, Swatches, Navigator, Info, Channels, Paths); expands raster, vector, and codec engines."
+      },
+      {
         "version": "3.1.0",
         "releaseDate": "2026-10-15",
         "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.imageeditor/v3.1.0/ImageEditor.fryplugin",
@@ -105,7 +115,7 @@
         "releaseNotes": "Adds inpainting Remove tool, Shadows/Highlights and Black & White adjustments, Curves and Liquify engines, text warp Bezier distortion, expanded codecs (Adobe Grd/Abr/Patterns, FITS, PCX, KRA), OpenType typography features, color range selection, and enhanced studio workflows."
       }
     ],
-    "sha256": "11f73d1dd19cfcb71c866fb151477afca0d55a1d8603c46a20939f052bf1048b"
+    "sha256": "cc61d1ca394b43939890e8392ff4e7815e73a8b8319c68706592dc32e78c6c1e"
   },
   {
     "id": "com.fryworld.snake",
@@ -894,20 +904,20 @@
     "id": "frypdf.overlay.imageeditor",
     "name": "Image Editor",
     "publisher": "FryPDF Team",
-    "version": "3.1.0",
+    "version": "3.2.0",
     "category": "Design & Creation",
     "description": "Layered design & photo editing studio: inpainting Remove tool, Curves, Liquify, tone adjustments, text warp, Adobe/FITS/PCX/KRA codecs, and OpenType typography.",
     "longDescription": "Compose graphics directly inside your PDF workspace with a full-featured, resizable floating design editor.\n\n### Key Features:\n\u2022 **Inpainting & Retouching**: Advanced Remove tool with brush stroke accumulation and multi-layer sampling to seamlessly erase unwanted objects.\n\u2022 **Curves, Tone & Liquify**: Precise curves adjustment, Shadows/Highlights, Black & White filters, and interactive mesh liquify distortion.\n\u2022 **Text Warp & Typography**: 4\u00d74 Bicubic Bezier text warping and OpenType feature tags (ligatures, stylistic sets, kerning).\n\u2022 **Expanded Codecs & Presets**: Import Adobe Grd (gradients), Abr (brushes), Patterns (pat), PSD tagged blocks, FITS, PCX, and KRA files.\n\u2022 **Layer-based Canvas**: Stack Text, Rectangle, Ellipse, Arrow, and imported Images in Z-order, with a clickable Layers panel (visibility/lock/rename), multi-select, marquee-select, grouping, and align/distribute.\n\u2022 **Full Style Controls**: Fill & stroke color pickers, gradient fills (linear/radial), stroke width/dash style, corner radius, opacity, and precise numeric X/Y/Width/Height/Rotation fields.\n\u2022 **Click-to-Place Tools & Eyedropper**: Click or drag directly on the canvas to place shapes and text, or sample any on-canvas color with the eyedropper \u2014 with V/T/R/E/A keyboard shortcuts.\n\u2022 **Free-Angle Rotation & Group Resize**: Drag-to-rotate any single element or a whole multi-selection around a shared pivot (15\u00b0 Shift-snap), plus proportional group resizing.\n\u2022 **Smart Alignment Guides & Inline Text Editing**: Snapping guide lines while dragging, plus double-click-to-edit text directly on the canvas.\n\u2022 **Undo/Redo**: Full edit history across every mutation \u2014 moves, resizes, rotations, crops, grouping, and color adjustments.\n\u2022 **Zoom & Pan**: Smooth cursor-anchored zoom, pan, and fit-to-window on a resizable canvas.\n\u2022 **Per-Image Crop, Rotate & Flip**: Precise crop handles with fixed-aspect presets (1:1, 4:3, 3:2, 16:9, 9:16), 90\u00b0 rotation, and horizontal/vertical flip, with aspect-ratio lock.\n\u2022 **Deep Color Adjustments & 9 Filters**: Brightness/contrast/saturation/hue/temperature/tint/blur/sharpen sliders, one-click Auto-Enhance, and Black & White, Sepia, Vintage, Vivid, Noir, Invert, Duotone, and Vignette presets.\n\u2022 **Duplicate, Copy & Paste**: Ctrl+D to duplicate and an in-app Ctrl+C/Ctrl+V element clipboard.\n\u2022 **Template Gallery**: 8 starter templates \u2014 slide, certificate, flyer, photo collage, quote card, cover page, social post, and sticky note \u2014 each with a live-rendered preview.\n\u2022 **Project Save/Load**: Save and reopen full editable projects as `.fryimg` files, with a confirm-before-discard safeguard.\n\u2022 **PNG Export & Clipboard**: Export the full canvas to PNG, or copy it as a real image directly to the system clipboard.\n\u2022 **Material 3 Expressive UI**: Fully theme-adaptive light/dark interface with segmented tool selectors and tactile sliders.\n\u2022 **Shell Integration**: Dedicated Workspace Studio Page, Command Palette (`Ctrl+Alt+I`), Status Bar pill, and Ribbon button.",
     "rating": 5.0,
     "ratingCount": 18,
     "installCount": 640,
-    "formattedSize": "577 KB",
+    "formattedSize": "754 KB",
     "iconKind": "ImageEditOutline",
     "iconColorHex": "#8B5CF6",
     "license": "MIT",
     "isVerified": true,
     "isOfficial": true,
-    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/frypdf.overlay.imageeditor/v3.1.0/ImageEditor.fryplugin",
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/frypdf.overlay.imageeditor/v3.2.0/ImageEditor.fryplugin",
     "tags": [
       "adjustments",
       "brushes",
@@ -955,6 +965,16 @@
     ],
     "versions": [
       {
+        "version": "3.2.0",
+        "releaseDate": "2026-10-15",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/frypdf.overlay.imageeditor/v3.2.0/ImageEditor.fryplugin",
+        "sha256": "ef7a7b3586b9768f736f5ff861a20b92768faf3584f9aa3f33daefdf9051c494",
+        "formattedSize": "754 KB",
+        "minHostVersion": "1.0.0",
+        "targetFramework": "net10.0",
+        "releaseNotes": "Adds modular dock workspace layout with tab grouping, edge splitting, and multi-zone docking; restores palette panels (Brushes, Actions, Adjustments, Gradients, Swatches, Navigator, Info, Channels, Paths); expands raster, vector, and codec engines."
+      },
+      {
         "version": "3.1.0",
         "releaseDate": "2026-10-12",
         "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/frypdf.overlay.imageeditor/v3.1.0/ImageEditor.fryplugin",
@@ -975,6 +995,6 @@
         "releaseNotes": "Release v3.0.0 of Image Editor."
       }
     ],
-    "sha256": "40e37a9aa8c5fde023c16ccccdc56986654b0caad45d4675d2f0d67acfd3f287"
+    "sha256": "ef7a7b3586b9768f736f5ff861a20b92768faf3584f9aa3f33daefdf9051c494"
   }
 ]
