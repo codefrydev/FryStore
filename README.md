@@ -1,8 +1,8 @@
-# FryPDF Resources & Plugin Ecosystem Hub
+# FryWorld Resources & Plugin Ecosystem Hub
 
-Official open-source repository hosting the **Remote Plugin Marketplace**, **Reference Plugin SDK**, and **Typography Font CDN** for **[FryPDF](https://github.com/codefrydev/PDFCreator)** (the modern .NET 10 cross-platform Avalonia document studio).
+Official open-source repository hosting the **Remote Plugin Marketplace**, **Reference Plugin SDK**, and **Typography Font CDN** for **[FryWorld](https://github.com/codefrydev/FryWorld)** (the modern .NET 10 cross-platform Avalonia desktop OS and studio suite).
 
-[![Plugins Catalog](https://img.shields.io/badge/Marketplace-5%20Plugins-blue.svg)](plugins/catalog.json)
+[![Plugins Catalog](https://img.shields.io/badge/Marketplace-8%20Plugins-blue.svg)](plugins/catalog.json)
 [![Fonts](https://img.shields.io/badge/Fonts-67%20Binaries-green.svg)](fonts/)
 [![License](https://img.shields.io/badge/License-MIT%20%2F%20OFL-orange.svg)](LICENSE)
 
@@ -20,9 +20,9 @@ Official open-source repository hosting the **Remote Plugin Marketplace**, **Ref
 
 ---
 
-## 🧩 1. FryPDF Plugin Marketplace
+## 🧩 1. FryWorld Plugin Marketplace
 
-FryPDF features a dynamic microkernel architecture where extensions mount directly into the application runtime (`shell.overlay`, ribbon tabs, status bar, command palette, and tools studio) without requiring full application restarts.
+FryWorld features a dynamic microkernel architecture where extensions mount directly into the application runtime (`shell.overlay`, ribbon tabs, status bar, command palette, and tools studio) without requiring full application restarts.
 
 The central marketplace catalog is defined in [`plugins/catalog.json`](plugins/catalog.json) and served over GitHub Raw CDN.
 

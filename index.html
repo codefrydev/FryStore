@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FryPDF Ecosystem Hub — Remote Plugin Marketplace, Typography CDN & Standalone Runners</title>
-  <meta name="description" content="Official open-source repository for FryPDF plugins, 67+ multilingual fonts CDN, and .NET 10 Avalonia reference plugins with zero-friction standalone runners.">
+  <title>FryWorld Ecosystem Hub — Remote Plugin Marketplace, Typography CDN & Standalone Runners</title>
+  <meta name="description" content="Official open-source repository for FryWorld plugins, 67+ multilingual fonts CDN, and .NET 10 Avalonia reference plugins with zero-friction standalone runners.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
       --font-heading: 'Outfit', 'Inter', sans-serif;
       --font-mono: 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
-      /* Emerald Dark Theme (Default FryPDF Studio) */
+      /* Emerald Dark Theme (Default FryWorld Studio) */
       --bg-base: #080C13;
       --bg-surface: #0E1420;
       --bg-surface-elevated: #151D2D;
@@ -1577,7 +1577,7 @@
             <polyline points="10 9 9 9 8 9"></polyline>
           </svg>
         </div>
-        <span>FryPDF <span style="font-weight:400;color:var(--text-muted);">Hub</span></span>
+        <span>FryWorld <span style="font-weight:400;color:var(--text-muted);">Hub</span></span>
         <span class="brand-badge">v1.0.1</span>
       </a>
 
@@ -1615,11 +1615,11 @@
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
           <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
         </svg>
-        <span>Official Ecosystem & Resource Hub for FryPDF Document Studio</span>
+        <span>Official Ecosystem & Resource Hub for FryWorld Desktop OS</span>
       </div>
 
       <h1 class="hero-title">
-        The Extensible Backbone of<br><span>FryPDF Document Studio</span>
+        The Extensible Backbone of<br><span>FryWorld Desktop Studio</span>
       </h1>
 
       <p class="hero-subtitle">
@@ -1689,7 +1689,7 @@
           </svg>
           <span>Decentralized Microkernel Registry</span>
         </div>
-        <h2 class="section-title">FryPDF Plugin Marketplace</h2>
+        <h2 class="section-title">FryWorld Plugin Marketplace</h2>
         <p class="section-desc">
           Extensions mount dynamically into the host runtime without full application restarts.
           Each package features verified SHA256 checksums, declarative manifests, and M3 Expressive aesthetics.
@@ -1736,7 +1736,7 @@
         </div>
         <h2 class="section-title">Playable In-Browser Simulators</h2>
         <p class="section-desc">
-          Test the actual mechanics and interaction models of FryPDF plugins right now inside your browser.
+          Test the actual mechanics and interaction models of FryWorld plugins right now inside your browser.
           Powered by responsive HTML5 canvas and client-side logic.
         </p>
       </div>
@@ -1879,7 +1879,7 @@ Document.Create(container => {
     container.Page(page => {
         page.Size(PageSizes.A4);
         page.Margin(2, Unit.Centimetre);
-        page.Header().Text("FryPDF Invoice #2026-001").SemiBold().FontSize(20);
+        page.Header().Text("FryWorld Invoice #2026-001").SemiBold().FontSize(20);
         page.Content().PaddingVertical(1, Unit.Centimetre).Text("Rendered via in-memory Roslyn runner.");
     });
 }).GeneratePdf("sample.pdf");
@@ -1983,7 +1983,7 @@ Console.WriteLine("[Success] Generated sample.pdf (24.3 KB) in 42ms");
 
         <!-- Editable text box -->
         <div class="live-sample-text" id="liveSampleText" contenteditable="true" spellcheck="false">
-          The quick brown fox jumps over the lazy dog. 0123456789 &mdash; FryPDF Typography Studio
+          The quick brown fox jumps over the lazy dog. 0123456789 &mdash; FryWorld Typography Studio
         </div>
 
         <!-- Code integration helper -->
@@ -2040,7 +2040,7 @@ Console.WriteLine("[Success] Generated sample.pdf (24.3 KB) in 42ms");
         <h2 class="section-title">Zero-Friction Standalone Runners</h2>
         <p class="section-desc">
           Per Rule 1 of AGENTS.md, every plugin includes a standalone <code>Runner/</code> application.
-          Hit F5 in Rider or Visual Studio to test in a native preview window without launching FryPDF!
+          Hit F5 in Rider or Visual Studio to test in a native preview window without launching FryWorld!
         </p>
       </div>
 
@@ -2116,12 +2116,12 @@ internal static class Program
 
           <div class="code-tab-panel" id="code-panel-manifest">
 {
-  "id": "com.frypdf.plugin.csharpeditor",
+  "id": "com.fryworld.csharpstudio",
   "name": "C# Code Studio",
-  "version": "1.0.1",
+  "version": "2.0.5",
   "publisher": "Code Fry Dev",
   "category": "Developer & Tools",
-  "minHostVersion": "1.0.0",
+  "minHostVersion": "0.1.0",
   "targetFramework": "net10.0",
   "entryAssembly": "CSharpEditorPlugin.dll",
   "entryType": "CSharpEditorPlugin.CSharpEditorPlugin",
@@ -2252,7 +2252,7 @@ python3 tools/package_runner.py csharpeditor --os macos --version 1.0.1
                 <polyline points="14 2 14 8 20 8"></polyline>
               </svg>
             </div>
-            <span>FryPDF Ecosystem</span>
+            <span>FryWorld Ecosystem</span>
           </div>
           <p>
             Official decentralized plugin marketplace, multilingual typography CDN, and reference .NET 10 Avalonia developer hub.
@@ -2275,7 +2275,7 @@ python3 tools/package_runner.py csharpeditor --os macos --version 1.0.1
             <li><a href="https://github.com/codefrydev/PDFCreator-resources/blob/main/AGENTS.md" target="_blank">AGENTS.md Guidelines</a></li>
             <li><a href="https://github.com/codefrydev/PDFCreator-resources/blob/main/plugins/catalog.json" target="_blank">Raw catalog.json</a></li>
             <li><a href="#cli">Packaging Tooling</a></li>
-            <li><a href="https://github.com/codefrydev/PDFCreator" target="_blank">Host FryPDF Studio</a></li>
+            <li><a href="https://github.com/codefrydev/FryWorld" target="_blank">Host FryWorld Studio</a></li>
           </ul>
         </div>
 
@@ -2306,28 +2306,28 @@ python3 tools/package_runner.py csharpeditor --os macos --version 1.0.1
        -------------------------------------------------------------------------- */
     const PLUGINS_DATA = [
       {
-        id: "com.frypdf.plugin.csharpeditor",
-        name: "C# Code Studio",
+        id: "com.fryworld.csharpstudio",
+        name: "FrySharp C# Studio",
         publisher: "Code Fry Dev",
-        version: "1.0.1",
+        version: "2.0.5",
         category: "Developer & Tools",
         description: "Interactive in-app C# development and automation studio featuring a dedicated project/script manager, syntax-highlighted editor, real-time Roslyn compilation diagnostics, and in-memory execution.",
-        longDescription: "Bring full-featured C# development and script automation directly into your document studio! This studio tool provides a dual-page workflow: a Script Management Hub to organize and template your scripts, and a dedicated C# Code Studio powered by AvaloniaEdit and Roslyn.",
+        longDescription: "Bring full-featured C# development and script automation directly into your FryWorld workspace! This studio tool provides a dual-page workflow: a Script Management Hub to organize and template your scripts, and a dedicated C# Code Studio powered by AvaloniaEdit and Roslyn.",
         rating: 5.0,
         ratingCount: 24,
         installCount: 310,
-        formattedSize: "3.9 MB",
+        formattedSize: "15.1 MB",
         iconKind: "CodeBraces",
         iconColorHex: "#10B981",
         iconEmoji: "💻",
-        downloadUrl: "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.frypdf.plugin.csharpeditor/v1.0.1/CSharpEditor.fryplugin",
+        downloadUrl: "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.csharpstudio/v2.0.5/CSharpEditor.fryplugin",
         tags: ["csharp", "editor", "roslyn", "scripting", "automation", "studio", "developer"],
         highlights: [
           "Two-Page Workflow: Script Management Hub & Full Code Studio",
           "Hardware-Accelerated C# Editor Powered by Avalonia.AvaloniaEdit",
           "Real-Time Background Roslyn Diagnostics & Error Navigation",
           "In-Memory Execution Engine with Live Console Output Streaming",
-          "Pre-loaded Starter Templates for PDF Automation & LINQ Benchmarking"
+          "Pre-loaded Starter Templates for Script Automation & LINQ Benchmarking"
         ],
         contributedFeatures: [
           "Workspace Studio: C# Code Studio Full-Viewport Navigation Page",
@@ -2335,16 +2335,16 @@ python3 tools/package_runner.py csharpeditor --os macos --version 1.0.1
           "Status Bar: Clickable '{ } C# Studio' Widget",
           "Ribbon: Plugins Tab > Tools > C# Studio Action"
         ],
-        sha256: "13500da8c6c0c289e96b03cca91680f0e20ff942a6418081ff22c6600d22527e"
+        sha256: "de98d5ea0e0d0698d5131a04961d0065dff012bbf5e7b456822c33383bf98144"
       },
       {
-        id: "com.frypdf.plugin.chess",
+        id: "com.fryworld.chess",
         name: "Chess",
         publisher: "Code Fry Dev",
         version: "1.0.0",
         category: "UI & Extensions",
         description: "Interactive floating Chess game overlay featuring single player vs smart CPU AI opponent and local pass-and-play.",
-        longDescription: "Bring intellectual gaming into your document studio! This extension provides a full-featured, playable Chess game directly inside a floating shell overlay.",
+        longDescription: "Bring intellectual gaming into your desktop workspace! This extension provides a full-featured, playable Chess game directly inside a floating shell overlay.",
         rating: 5.0,
         ratingCount: 38,
         installCount: 480,
@@ -2352,7 +2352,7 @@ python3 tools/package_runner.py csharpeditor --os macos --version 1.0.1
         iconKind: "ChessKnight",
         iconColorHex: "#10B981",
         iconEmoji: "♟️",
-        downloadUrl: "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.frypdf.plugin.chess/v1.0.0/Chess.fryplugin",
+        downloadUrl: "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.chess/v1.0.0/Chess.fryplugin",
         tags: ["game", "chess", "ai", "minigame", "arcade", "overlay", "strategy"],
         highlights: [
           "Single Player vs Multi-Tier CPU AI (Easy, Medium, Hard)",
@@ -2368,13 +2368,13 @@ python3 tools/package_runner.py csharpeditor --os macos --version 1.0.1
         sha256: "5a5339d7e96b7da23493f99c4f5a572e63684c9171b6a606ca398800abc7ee7f"
       },
       {
-        id: "com.frypdf.plugin.tictactoe",
+        id: "com.fryworld.tictactoe",
         name: "Tic-Tac-Toe",
         publisher: "Code Fry Dev",
         version: "1.1.0",
         category: "UI & Extensions",
         description: "Interactive floating Tic-Tac-Toe mini-game with local 2-Player mode and intelligent AI opponent.",
-        longDescription: "Bring playful entertainment into your PDF workflow! Features single player vs AI (with Easy, Smart, and Unbeatable difficulties) and local 2-player pass-and-play mode. Deeply integrated with FryPDF shell overlay, status bar, and command palette.",
+        longDescription: "Bring playful entertainment into your workspace! Features single player vs AI (with Easy, Smart, and Unbeatable difficulties) and local 2-player pass-and-play mode. Deeply integrated with FryWorld shell overlay, status bar, and command palette.",
         rating: 5.0,
         ratingCount: 42,
         installCount: 520,
@@ -2382,7 +2382,7 @@ python3 tools/package_runner.py csharpeditor --os macos --version 1.0.1
         iconKind: "GamepadVariantOutline",
         iconColorHex: "#E11D48",
         iconEmoji: "🎮",
-        downloadUrl: "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.frypdf.plugin.tictactoe/v1.1.0/TicTacToe.fryplugin",
+        downloadUrl: "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.tictactoe/v1.1.0/TicTacToe.fryplugin",
         tags: ["game", "tictactoe", "overlay", "arcade", "ai", "minigame"],
         highlights: [
           "Single Player vs AI & 2-Player Pass-and-Play",
@@ -2398,13 +2398,13 @@ python3 tools/package_runner.py csharpeditor --os macos --version 1.0.1
         sha256: "8491624371414d9e971c2eca09bb84868ef4fb941bff6b3c0b3c80081773903e"
       },
       {
-        id: "frypdf.overlay.snake",
+        id: "com.fryworld.snake",
         name: "Retro Arcade Snake Game",
-        publisher: "FryPDF Team",
+        publisher: "FryWorld Team",
         version: "1.0.0",
         category: "UI & Extensions",
         description: "Playable, draggable retro-arcade Snake game floating over the application canvas in the 'shell.overlay' slot.",
-        longDescription: "Bring playful retro-arcade entertainment into your document workflow! This extension mounts a high-performance floating Snake game into the 'shell.overlay' slot.",
+        longDescription: "Bring playful retro-arcade entertainment into your workspace! This extension mounts a high-performance floating Snake game into the 'shell.overlay' slot.",
         rating: 5.0,
         ratingCount: 128,
         installCount: 4200,
@@ -2412,7 +2412,7 @@ python3 tools/package_runner.py csharpeditor --os macos --version 1.0.1
         iconKind: "GamepadVariantOutline",
         iconColorHex: "#10B981",
         iconEmoji: "🐍",
-        downloadUrl: "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/frypdf.overlay.snake/v1.0.0/Snake.fryplugin",
+        downloadUrl: "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.snake/v1.0.0/Snake.fryplugin",
         tags: ["game", "snake", "overlay", "arcade", "retro", "shell", "widget"],
         highlights: [
           "60+ FPS direct canvas drawing",
@@ -2428,13 +2428,13 @@ python3 tools/package_runner.py csharpeditor --os macos --version 1.0.1
         sha256: "853d4eb145445ccc5ffbd474df63e2d7f5dfefc73952f09aae8b7652c75dba7e"
       },
       {
-        id: "frypdf.overlay.scratchpad",
+        id: "com.fryworld.scratchpad",
         name: "Review Scratchpad & Notes",
-        publisher: "FryPDF Tools Team",
+        publisher: "FryWorld Tools Team",
         version: "1.0.0",
         category: "UI & Extensions",
-        description: "Floating Markdown scratchpad with live word/char counters and timestamp logs for PDF review.",
-        longDescription: "Jot down rapid review notes, citations, page corrections, and checklists without leaving your current PDF screen.",
+        description: "Floating Markdown scratchpad with live word/char counters and timestamp logs.",
+        longDescription: "Jot down rapid review notes, citations, code snippets, and checklists without leaving your current workspace.",
         rating: 4.9,
         ratingCount: 94,
         installCount: 2850,
@@ -2442,7 +2442,7 @@ python3 tools/package_runner.py csharpeditor --os macos --version 1.0.1
         iconKind: "NotebookEditOutline",
         iconColorHex: "#6366F1",
         iconEmoji: "📝",
-        downloadUrl: "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/frypdf.overlay.scratchpad/v1.0.0/Scratchpad.fryplugin",
+        downloadUrl: "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.scratchpad/v1.0.0/Scratchpad.fryplugin",
         tags: ["scratchpad", "notes", "review", "overlay", "markdown"],
         highlights: [
           "Auto M3 window chrome with pin and minimize",
@@ -2458,9 +2458,9 @@ python3 tools/package_runner.py csharpeditor --os macos --version 1.0.1
         sha256: "6bdd4b8ac737441c80b2b4d24960eb8d78a16ce24d93d7aa8c29e87d151aacfd"
       },
       {
-        id: "frypdf.overlay.telemetry",
+        id: "com.fryworld.telemetry",
         name: "Document Telemetry HUD",
-        publisher: "FryPDF Core Engineering",
+        publisher: "FryWorld Core Engineering",
         version: "1.0.0",
         category: "Tools & Productivity",
         description: "Live performance telemetry HUD showing managed heap allocation, GC cycles, and memory trimming.",
@@ -2472,7 +2472,7 @@ python3 tools/package_runner.py csharpeditor --os macos --version 1.0.1
         iconKind: "ChartTimelineVariant",
         iconColorHex: "#0EA5E9",
         iconEmoji: "⚡",
-        downloadUrl: "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/frypdf.overlay.telemetry/v1.0.0/Telemetry.fryplugin",
+        downloadUrl: "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.telemetry/v1.0.0/Telemetry.fryplugin",
         tags: ["telemetry", "diagnostics", "memory", "hud", "performance"],
         highlights: [
           "Live managed heap monitoring",
@@ -2488,9 +2488,9 @@ python3 tools/package_runner.py csharpeditor --os macos --version 1.0.1
         sha256: "e21ffaa732b2c82b185123f51e1cba547febf503c6ee456770b5732bdf7bb8f3"
       },
       {
-        id: "frypdf.overlay.musicplayer",
+        id: "com.fryworld.musicplayer",
         name: "Music Player",
-        publisher: "FryPDF Tools Team",
+        publisher: "FryWorld Tools Team",
         version: "1.0.0",
         category: "Tools & Productivity",
         description: "Floating playlist-based music player with transport controls, seek/volume, and real ID3 metadata.",
@@ -2502,7 +2502,7 @@ python3 tools/package_runner.py csharpeditor --os macos --version 1.0.1
         iconKind: "MusicNote",
         iconColorHex: "#F59E0B",
         iconEmoji: "🎵",
-        downloadUrl: "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/frypdf.overlay.musicplayer/v1.0.0/MusicPlayer.fryplugin",
+        downloadUrl: "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.musicplayer/v1.0.0/MusicPlayer.fryplugin",
         tags: ["music", "audio", "player", "playlist", "overlay", "media"],
         highlights: [
           "Triple View Modes: Now Playing Focus, Full Queue Studio & Compact Mini Widget",
@@ -2519,13 +2519,13 @@ python3 tools/package_runner.py csharpeditor --os macos --version 1.0.1
         sha256: "b474bfee4474b6870a8935bc573dc520caba1f6201d0a930e8f0cebb02344ec2"
       },
       {
-        id: "frypdf.overlay.imageeditor",
-        name: "Image Editor",
-        publisher: "FryPDF Team",
+        id: "com.fryworld.imageeditor",
+        name: "FryImage Studio",
+        publisher: "FryWorld Team",
         version: "3.2.0",
         category: "Design & Creation",
         description: "A Canva-style layered design editor: fill/stroke/gradient styling, layers panel, grouping, free rotation, smart guides, inline text editing, an 8-template gallery, and project save/load.",
-        longDescription: "Compose graphics directly inside your PDF workspace with a full-featured, resizable floating design editor.",
+        longDescription: "Compose graphics directly inside your workspace with a full-featured, resizable floating design editor.",
         rating: 5.0,
         ratingCount: 18,
         installCount: 640,
@@ -2533,7 +2533,7 @@ python3 tools/package_runner.py csharpeditor --os macos --version 1.0.1
         iconKind: "ImageEditOutline",
         iconColorHex: "#8B5CF6",
         iconEmoji: "🎨",
-        downloadUrl: "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/frypdf.overlay.imageeditor/v3.2.0/ImageEditor.fryplugin",
+        downloadUrl: "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.imageeditor/v3.2.0/ImageEditor.fryplugin",
         tags: ["adjustments", "canva", "canvas", "crop", "design", "editor", "export", "filters", "gradient", "layers"],
         highlights: [
           "Layers panel, grouping, and fill/stroke/gradient styling",
@@ -3185,7 +3185,7 @@ Document.Create(container => {
     container.Page(page => {
         page.Size(PageSizes.A4);
         page.Margin(2, Unit.Centimetre);
-        page.Header().Text("FryPDF Invoice #2026-001").SemiBold().FontSize(20);
+        page.Header().Text("FryWorld Invoice #2026-001").SemiBold().FontSize(20);
         page.Content().PaddingVertical(1, Unit.Centimetre).Text("Rendered via in-memory Roslyn runner.");
     });
 }).GeneratePdf("sample.pdf");
@@ -3311,10 +3311,10 @@ Console.WriteLine($"[Security] Encrypted: False | PDF-A Compliant: True");`
     const fontSearchInput = document.getElementById('fontSearchInput');
 
     const SAMPLE_TEXTS = {
-      latin: "The quick brown fox jumps over the lazy dog. 0123456789 — FryPDF Typography Studio",
-      hindi: "नमस्ते दुनिया! फ्राईपीडीएफ दस्तावेज़ स्टूडियो में आपका स्वागत है। ०१२३४५६७८९",
-      cjk: "こんにちは世界！ FryPDFは現代的なクロスプラットフォームドキュメントスタジオです。",
-      arabic: "مرحباً بكم في استوديو المستندات الحديث فري بي دي إف 2026"
+      latin: "The quick brown fox jumps over the lazy dog. 0123456789 — FryWorld Typography Studio",
+      hindi: "नमस्ते दुनिया! फ्राईवर्ल्ड स्टूडियो में आपका स्वागत है। ०१२३४५६७८९",
+      cjk: "こんにちは世界！ FryWorldは現代的なクロスプラットフォームスタジオです。",
+      arabic: "مرحباً بكم في استوديو المستندات الحديث فري وورلد 2026"
     };
 
     // Populate font selector
