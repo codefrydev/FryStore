@@ -216,14 +216,14 @@
         "version": "1.0.0",
         "releaseDate": "2026-10-15",
         "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.musicplayer/v1.0.0/MusicPlayer.fryplugin",
-        "sha256": "b4b47741a032422f6130fd1744787e7aa6aef5110d39020e06ac93cd8cc79234",
+        "sha256": "b474bfee4474b6870a8935bc573dc520caba1f6201d0a930e8f0cebb02344ec2",
         "formattedSize": "7.1 MB",
         "minHostVersion": "0.1.0",
         "targetFramework": "net10.0",
         "releaseNotes": "Official release of Fry Music Player consuming FryWorld.Sdk v0.1.0 with native SoundFlow & MiniAudio high-res playback."
       }
     ],
-    "sha256": "b4b47741a032422f6130fd1744787e7aa6aef5110d39020e06ac93cd8cc79234"
+    "sha256": "b474bfee4474b6870a8935bc573dc520caba1f6201d0a930e8f0cebb02344ec2"
   },
   {
     "id": "com.fryworld.chess",
@@ -946,14 +946,14 @@
         "version": "1.0.0",
         "releaseDate": "2026-10-15",
         "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/frypdf.overlay.musicplayer/v1.0.0/MusicPlayer.fryplugin",
-        "sha256": "b4b47741a032422f6130fd1744787e7aa6aef5110d39020e06ac93cd8cc79234",
+        "sha256": "b474bfee4474b6870a8935bc573dc520caba1f6201d0a930e8f0cebb02344ec2",
         "formattedSize": "7.1 MB",
         "minHostVersion": "1.0.0",
         "targetFramework": "net10.0",
         "releaseNotes": "Release v1.0.0 of Music Player."
       }
     ],
-    "sha256": "b4b47741a032422f6130fd1744787e7aa6aef5110d39020e06ac93cd8cc79234"
+    "sha256": "b474bfee4474b6870a8935bc573dc520caba1f6201d0a930e8f0cebb02344ec2"
   },
   {
     "id": "frypdf.overlay.imageeditor",

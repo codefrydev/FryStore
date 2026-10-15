@@ -9,7 +9,7 @@
   "dependencies": [],
   "settingsSchema": {
     "Volume": {
-      "type": "number",
+      "type": "double",
       "label": "Default Volume",
       "description": "Initial playback volume (0-100).",
       "default": 80
