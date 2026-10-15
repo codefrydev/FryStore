@@ -34,18 +34,14 @@ public class ScratchpadPlugin : IFryPlugin
 
     public Task ApplyAsync(IFryPluginContext ctx, CancellationToken ct = default)
     {
+        // Opens this plugin's overlay in whichever shell hosts it: FryWorld, FryPDF or the standalone runner.
         void OpenScratchpad()
         {
-            var fryWorldVmType = Type.GetType("FryWorld.ViewModels.MainViewModel, FryWorld");
-            if (fryWorldVmType != null)
-            {
-                var mainVm = ctx.GetService(fryWorldVmType);
-                fryWorldVmType.GetMethod("NavigateToPlugin")?.Invoke(mainVm, ["com.fryworld.scratchpad"]);
-            }
+            if (ctx.TryGetService<IShellService>(out var shell)) shell.ShowOverlay(Id);
         }
 
         // 1. Register Overlay
-        var overlayReg = ctx.RegisterOverlay(new OverlayDescriptor
+        ctx.RegisterOverlay(new OverlayDescriptor
         {
             Id = Id,
             Title = "📝 Scratchpad",
@@ -62,7 +58,7 @@ public class ScratchpadPlugin : IFryPlugin
         });
 
         // 2. Register Command Palette
-        var cmdReg = ctx.RegisterCommand(new CommandPaletteDescriptor
+        ctx.RegisterCommand(new CommandPaletteDescriptor
         {
             Id = "cmd.overlay.scratchpad",
             Title = "Toggle Review Scratchpad",
@@ -74,7 +70,7 @@ public class ScratchpadPlugin : IFryPlugin
         });
 
         // 3. Register Footer Status Bar Widget
-        var statusReg = ctx.RegisterStatusBarWidget(new StatusBarWidgetDescriptor
+        ctx.RegisterStatusBarWidget(new StatusBarWidgetDescriptor
         {
             Id = "fryworld.status.scratchpad",
             Label = "📝 Notes",
@@ -84,13 +80,7 @@ public class ScratchpadPlugin : IFryPlugin
             ClickCommand = new RelayCommand(OpenScratchpad)
         });
 
-        // Clean rollback on unload
-        ctx.RegisterEffect(() =>
-        {
-            overlayReg.Dispose();
-            cmdReg.Dispose();
-            statusReg.Dispose();
-        });
+        // Everything registered through ctx is removed automatically when the plugin unmounts.
 
         return Task.CompletedTask;
     }

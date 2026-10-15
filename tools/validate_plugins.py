@@ -8,6 +8,7 @@ and example solution runner architectures.
 import hashlib
 import json
 import os
+import re
 import sys
 import zipfile
 from pathlib import Path
@@ -39,10 +40,27 @@ REQUIRED_VERSION_FIELDS = [
 REQUIRED_MANIFEST_FIELDS = [
     "id",
     "name",
-    "version",
     "description",
+]
+
+# FryWorld.Sdk 0.1+ stamps these into the packaged plugin.json at build time, so a project on that SDK may
+# leave them out of its source manifest. Older projects must still declare them.
+STAMPED_MANIFEST_FIELDS = [
+    "version",
     "entryPoint",
 ]
+
+# Same rule as the SDK build (FRY001) and loader: usable as a folder name.
+PLUGIN_ID_PATTERN = re.compile(r"^[A-Za-z0-9]([A-Za-z0-9_.-]*[A-Za-z0-9])?$")
+
+
+def uses_stamping_sdk(csproj_files) -> bool:
+    """True when the project references FryWorld.Sdk 0.1.0 or newer, whose build targets stamp the manifest."""
+    for csproj in csproj_files:
+        match = re.search(r'Include="FryWorld\.Sdk"\s+Version="(\d+)\.(\d+)', csproj.read_text(encoding="utf-8"))
+        if match and (int(match.group(1)), int(match.group(2))) >= (0, 1):
+            return True
+    return False
 
 
 def log_pass(msg: str):
@@ -241,6 +259,14 @@ def validate_example_plugins() -> int:
                     if req not in m:
                         log_fail(f"[{pname}] Manifest missing field '{req}'.")
                         errors += 1
+                if not uses_stamping_sdk(csproj_files):
+                    for req in STAMPED_MANIFEST_FIELDS:
+                        if req not in m:
+                            log_fail(f"[{pname}] Manifest missing field '{req}' (FryWorld.Sdk 0.1+ fills it in; this project is older).")
+                            errors += 1
+                if "id" in m and not PLUGIN_ID_PATTERN.match(str(m["id"])):
+                    log_fail(f"[{pname}] Manifest id '{m['id']}' must be letters, digits, '.', '-' or '_', starting and ending with a letter or digit.")
+                    errors += 1
             except Exception as ex:
                 log_fail(f"[{pname}] Malformed plugin.json: {ex}")
                 errors += 1

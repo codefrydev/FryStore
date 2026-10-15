@@ -61,18 +61,14 @@ public class ChessPlugin : IFryPlugin
 
     public Task ApplyAsync(IFryPluginContext ctx, CancellationToken ct = default)
     {
+        // Opens this plugin's overlay in whichever shell hosts it: FryWorld, FryPDF or the standalone runner.
         void OpenChess()
         {
-            var fryWorldVmType = Type.GetType("FryWorld.ViewModels.MainViewModel, FryWorld");
-            if (fryWorldVmType != null)
-            {
-                var mainVm = ctx.GetService(fryWorldVmType);
-                fryWorldVmType.GetMethod("NavigateToPlugin")?.Invoke(mainVm, ["com.fryworld.chess"]);
-            }
+            if (ctx.TryGetService<IShellService>(out var shell)) shell.ShowOverlay(Id);
         }
 
         // 1. Register Shell Overlay Descriptor
-        var overlayReg = ctx.RegisterOverlay(new OverlayDescriptor
+        ctx.RegisterOverlay(new OverlayDescriptor
         {
             Id = Id,
             Title = "♟️ Chess",
@@ -89,7 +85,7 @@ public class ChessPlugin : IFryPlugin
         });
 
         // 2. Register Command in Command Palette (Ctrl+Alt+C)
-        var cmdReg = ctx.RegisterCommand(new CommandPaletteDescriptor
+        ctx.RegisterCommand(new CommandPaletteDescriptor
         {
             Id = "cmd.overlay.chess",
             Title = "Play Chess Game",
@@ -101,7 +97,7 @@ public class ChessPlugin : IFryPlugin
         });
 
         // 3. Register Footer Status Bar Widget (Clickable ♟️ Chess pill)
-        var statusReg = ctx.RegisterStatusBarWidget(new StatusBarWidgetDescriptor
+        ctx.RegisterStatusBarWidget(new StatusBarWidgetDescriptor
         {
             Id = "fryworld.status.chess",
             Label = "♟️ Chess",
@@ -111,13 +107,7 @@ public class ChessPlugin : IFryPlugin
             ClickCommand = new RelayCommand(OpenChess)
         });
 
-        // 4. Reversible effects for clean unmount
-        ctx.RegisterEffect(() =>
-        {
-            overlayReg.Dispose();
-            cmdReg.Dispose();
-            statusReg.Dispose();
-        });
+        // Everything registered through ctx is removed automatically when the plugin unmounts.
 
         return Task.CompletedTask;
     }
