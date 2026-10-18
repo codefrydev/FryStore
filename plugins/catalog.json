@@ -47,7 +47,7 @@
         "version": "1.0.0",
         "releaseDate": "2026-10-18",
         "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.circuit/v1.0.0/Circuit.fryplugin",
-        "sha256": "03abe0ac42318f58deed40e35904d66c54801766be3ce56181769900b55ea214",
+        "sha256": "cfce4a4e1a13914b71fa5d4566b6676bfbe9c86deae275d25ef8c12c68b262e0",
         "formattedSize": "164 KB",
         "minHostVersion": "0.1.0",
         "targetFramework": "net10.0",
