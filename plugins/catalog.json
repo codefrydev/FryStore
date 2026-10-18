@@ -1,5 +1,62 @@
 [
   {
+    "id": "com.fryworld.circuit",
+    "name": "FryCircuit Studio",
+    "publisher": "Code Fry Dev",
+    "version": "1.0.0",
+    "category": "Engineering & Simulation",
+    "description": "Interactive SPICE-grade analog & digital schematic CAD studio and real-time MNA circuit simulator.",
+    "longDescription": "Interactive SPICE-grade analog & digital schematic CAD studio and real-time MNA circuit simulator with 60 FPS transient solver, animated electron current particles, live node voltage badges, oscilloscope with dual-channel time-domain & FFT spectrum analysis, quantum Josephson junctions, Berkeley SPICE netlist export/import, and aerospace manufacturing BOM.",
+    "rating": 5.0,
+    "ratingCount": 10,
+    "installCount": 100,
+    "formattedSize": "164 KB",
+    "iconKind": "LightningBolt",
+    "iconColorHex": "#00F0FF",
+    "license": "MIT",
+    "isVerified": true,
+    "isOfficial": true,
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.circuit/v1.0.0/Circuit.fryplugin",
+    "websiteUrl": "https://codefrydev.in",
+    "repositoryUrl": "https://github.com/PrashantUnity/FryCircuit",
+    "tags": [
+      "engineering & simulation",
+      "circuit",
+      "spice",
+      "cad",
+      "fryworld",
+      "plugin"
+    ],
+    "highlights": [
+      "Interactive Schematic Canvas with 60 FPS MNA Solver",
+      "Dual-Channel Time-Domain & FFT Spectrum Oscilloscope",
+      "Live Electron Current Particles & Node Voltage Badges",
+      "Berkeley SPICE Netlist & Aerospace BOM Drawers"
+    ],
+    "contributedFeatures": [
+      "Navigation: Circuit Studio",
+      "Overlay: \u26a1 Circuit Studio",
+      "Command: Open Circuit Studio",
+      "Status Bar: \u26a1 Circuit"
+    ],
+    "dependencies": [
+      "FryWorld.Sdk >= 0.1.0"
+    ],
+    "versions": [
+      {
+        "version": "1.0.0",
+        "releaseDate": "2026-10-18",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.circuit/v1.0.0/Circuit.fryplugin",
+        "sha256": "0f31ee7aa83b4805c319f84ca36ba19cb3951d1b97d532512714775eabf22261",
+        "formattedSize": "164 KB",
+        "minHostVersion": "0.1.0",
+        "targetFramework": "net10.0",
+        "releaseNotes": "Initial official release of FryCircuit Studio plugin for FryWorld. Features 60 FPS real-time MNA transient solver, animated electron current particles, live node voltage badges, oscilloscope with dual-channel time-domain & FFT spectrum analysis, quantum Josephson junctions, Berkeley SPICE netlist export/import, and aerospace manufacturing BOM."
+      }
+    ],
+    "sha256": "0f31ee7aa83b4805c319f84ca36ba19cb3951d1b97d532512714775eabf22261"
+  },
+  {
     "id": "com.fryworld.csharpstudio",
     "name": "FrySharp C# Studio",
     "publisher": "Code Fry Dev",
@@ -151,7 +208,7 @@
     "contributedFeatures": [
       "Overlay: Floating Snake Game",
       "Command: Play Snake Game",
-      "Status Bar: 🐍 Snake"
+      "Status Bar: \ud83d\udc0d Snake"
     ],
     "dependencies": [
       "FryWorld.Sdk >= 0.1.0"
@@ -204,9 +261,9 @@
       "SoundFlow & MiniAudio Native High-Fidelity Audio Engine"
     ],
     "contributedFeatures": [
-      "Overlay: 🎵 Music Player",
+      "Overlay: \ud83c\udfb5 Music Player",
       "Command: Toggle Music Player",
-      "Status Bar: 🎵 Music"
+      "Status Bar: \ud83c\udfb5 Music"
     ],
     "dependencies": [
       "FryWorld.Sdk >= 0.1.0"
