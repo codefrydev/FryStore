@@ -47,7 +47,7 @@
         "version": "1.0.0",
         "releaseDate": "2026-10-18",
         "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.circuit/v1.0.0/Circuit.fryplugin",
-        "sha256": "0f31ee7aa83b4805c319f84ca36ba19cb3951d1b97d532512714775eabf22261",
+        "sha256": "11fdba871e725e2315b367395f858428a3d0dc2d9704ed72a75d4c791a934ab6",
         "formattedSize": "164 KB",
         "minHostVersion": "0.1.0",
         "targetFramework": "net10.0",
