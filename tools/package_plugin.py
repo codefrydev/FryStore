@@ -20,7 +20,7 @@ ROOT_DIR = Path(__file__).resolve().parent.parent
 EXAMPLES_DIR = ROOT_DIR / "examples"
 PLUGINS_DIR = ROOT_DIR / "plugins"
 CATALOG_PATH = PLUGINS_DIR / "catalog.json"
-REPO_RAW_BASE = "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main"
+REPO_RAW_BASE = "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main"
 
 
 def format_size(num_bytes: int) -> str:

@@ -16,7 +16,7 @@
     "license": "MIT",
     "isVerified": true,
     "isOfficial": true,
-    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.circuit/v1.0.0/Circuit.fryplugin",
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.circuit/v1.0.0/Circuit.fryplugin",
     "websiteUrl": "https://codefrydev.in",
     "repositoryUrl": "https://github.com/PrashantUnity/FryCircuit",
     "tags": [
@@ -46,7 +46,7 @@
       {
         "version": "1.0.0",
         "releaseDate": "2026-10-18",
-        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.circuit/v1.0.0/Circuit.fryplugin",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.circuit/v1.0.0/Circuit.fryplugin",
         "sha256": "11fdba871e725e2315b367395f858428a3d0dc2d9704ed72a75d4c791a934ab6",
         "formattedSize": "164 KB",
         "minHostVersion": "0.1.0",
@@ -73,7 +73,7 @@
     "license": "MIT",
     "isVerified": true,
     "isOfficial": true,
-    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.csharpstudio/v2.0.5/CSharpEditor.fryplugin",
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.csharpstudio/v2.0.5/CSharpEditor.fryplugin",
     "websiteUrl": "https://codefrydev.in",
     "repositoryUrl": "https://github.com/codefrydev/FrySharp",
     "tags": [
@@ -100,7 +100,7 @@
       {
         "version": "2.0.5",
         "releaseDate": "2026-10-15",
-        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.csharpstudio/v2.0.5/CSharpEditor.fryplugin",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.csharpstudio/v2.0.5/CSharpEditor.fryplugin",
         "sha256": "de98d5ea0e0d0698d5131a04961d0065dff012bbf5e7b456822c33383bf98144",
         "formattedSize": "15.1 MB",
         "minHostVersion": "0.1.0",
@@ -127,7 +127,7 @@
     "license": "MIT",
     "isVerified": true,
     "isOfficial": true,
-    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.imageeditor/v3.2.0/ImageEditor.fryplugin",
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.imageeditor/v3.2.0/ImageEditor.fryplugin",
     "websiteUrl": "https://codefrydev.in",
     "repositoryUrl": "https://github.com/codefrydev/FryImage",
     "tags": [
@@ -154,7 +154,7 @@
       {
         "version": "3.2.0",
         "releaseDate": "2026-10-15",
-        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.imageeditor/v3.2.0/ImageEditor.fryplugin",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.imageeditor/v3.2.0/ImageEditor.fryplugin",
         "sha256": "cc61d1ca394b43939890e8392ff4e7815e73a8b8319c68706592dc32e78c6c1e",
         "formattedSize": "766 KB",
         "minHostVersion": "0.1.0",
@@ -164,7 +164,7 @@
       {
         "version": "3.1.0",
         "releaseDate": "2026-10-15",
-        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.imageeditor/v3.1.0/ImageEditor.fryplugin",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.imageeditor/v3.1.0/ImageEditor.fryplugin",
         "sha256": "11f73d1dd19cfcb71c866fb151477afca0d55a1d8603c46a20939f052bf1048b",
         "formattedSize": "699 KB",
         "minHostVersion": "0.1.0",
@@ -191,9 +191,9 @@
     "license": "MIT",
     "isVerified": true,
     "isOfficial": true,
-    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.snake/v1.0.0/Snake.fryplugin",
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.snake/v1.0.0/Snake.fryplugin",
     "websiteUrl": "https://codefrydev.in",
-    "repositoryUrl": "https://github.com/codefrydev/PDFCreator-resources",
+    "repositoryUrl": "https://github.com/codefrydev/FryStore",
     "tags": [
       "games",
       "fryworld",
@@ -217,7 +217,7 @@
       {
         "version": "1.0.0",
         "releaseDate": "2026-10-15",
-        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.snake/v1.0.0/Snake.fryplugin",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.snake/v1.0.0/Snake.fryplugin",
         "sha256": "dc407692647bbe648b0855544781ef599bfbfd86834f26fcfcde9c15601eaff8",
         "formattedSize": "20 KB",
         "minHostVersion": "0.1.0",
@@ -244,9 +244,9 @@
     "license": "MIT",
     "isVerified": true,
     "isOfficial": true,
-    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.musicplayer/v1.0.0/MusicPlayer.fryplugin",
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.musicplayer/v1.0.0/MusicPlayer.fryplugin",
     "websiteUrl": "https://codefrydev.in",
-    "repositoryUrl": "https://github.com/codefrydev/PDFCreator-resources",
+    "repositoryUrl": "https://github.com/codefrydev/FryStore",
     "tags": [
       "music",
       "audio",
@@ -272,7 +272,7 @@
       {
         "version": "1.0.0",
         "releaseDate": "2026-10-15",
-        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.musicplayer/v1.0.0/MusicPlayer.fryplugin",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.musicplayer/v1.0.0/MusicPlayer.fryplugin",
         "sha256": "b474bfee4474b6870a8935bc573dc520caba1f6201d0a930e8f0cebb02344ec2",
         "formattedSize": "7.1 MB",
         "minHostVersion": "0.1.0",
@@ -299,9 +299,9 @@
     "license": "MIT",
     "isVerified": true,
     "isOfficial": true,
-    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.chess/v1.0.0/Chess.fryplugin",
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.chess/v1.0.0/Chess.fryplugin",
     "websiteUrl": "https://codefrydev.in",
-    "repositoryUrl": "https://github.com/codefrydev/PDFCreator-resources",
+    "repositoryUrl": "https://github.com/codefrydev/FryStore",
     "tags": [
       "games",
       "fryworld",
@@ -325,7 +325,7 @@
       {
         "version": "1.0.0",
         "releaseDate": "2026-10-15",
-        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.chess/v1.0.0/Chess.fryplugin",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.chess/v1.0.0/Chess.fryplugin",
         "sha256": "36f5ec66ab2e7f95ddbc784dcbfe1647d6d15270899b222af77f5c5b59d56376",
         "formattedSize": "40 KB",
         "minHostVersion": "0.1.0",
@@ -352,9 +352,9 @@
     "license": "MIT",
     "isVerified": true,
     "isOfficial": true,
-    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.tictactoe/v1.0.0/TicTacToe.fryplugin",
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.tictactoe/v1.0.0/TicTacToe.fryplugin",
     "websiteUrl": "https://codefrydev.in",
-    "repositoryUrl": "https://github.com/codefrydev/PDFCreator-resources",
+    "repositoryUrl": "https://github.com/codefrydev/FryStore",
     "tags": [
       "games",
       "fryworld",
@@ -378,7 +378,7 @@
       {
         "version": "1.0.0",
         "releaseDate": "2026-10-15",
-        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.tictactoe/v1.0.0/TicTacToe.fryplugin",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.tictactoe/v1.0.0/TicTacToe.fryplugin",
         "sha256": "b201e941583c54e13ae7d9a55ba398ff8a9424493f6f0d90a24f62120b76f953",
         "formattedSize": "20 KB",
         "minHostVersion": "0.1.0",
@@ -405,9 +405,9 @@
     "license": "MIT",
     "isVerified": true,
     "isOfficial": true,
-    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.telemetry/v1.0.0/Telemetry.fryplugin",
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.telemetry/v1.0.0/Telemetry.fryplugin",
     "websiteUrl": "https://codefrydev.in",
-    "repositoryUrl": "https://github.com/codefrydev/PDFCreator-resources",
+    "repositoryUrl": "https://github.com/codefrydev/FryStore",
     "tags": [
       "utility",
       "fryworld",
@@ -431,7 +431,7 @@
       {
         "version": "1.0.0",
         "releaseDate": "2026-10-15",
-        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.telemetry/v1.0.0/Telemetry.fryplugin",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.telemetry/v1.0.0/Telemetry.fryplugin",
         "sha256": "0b1ea630cd80aa99065a6ff8e264fcc5deeebd38c4edb8fdc0c9ecc93d530b28",
         "formattedSize": "14 KB",
         "minHostVersion": "0.1.0",
@@ -458,9 +458,9 @@
     "license": "MIT",
     "isVerified": true,
     "isOfficial": true,
-    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.scratchpad/v1.0.0/Scratchpad.fryplugin",
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.scratchpad/v1.0.0/Scratchpad.fryplugin",
     "websiteUrl": "https://codefrydev.in",
-    "repositoryUrl": "https://github.com/codefrydev/PDFCreator-resources",
+    "repositoryUrl": "https://github.com/codefrydev/FryStore",
     "tags": [
       "productivity",
       "fryworld",
@@ -484,7 +484,7 @@
       {
         "version": "1.0.0",
         "releaseDate": "2026-10-15",
-        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.scratchpad/v1.0.0/Scratchpad.fryplugin",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.scratchpad/v1.0.0/Scratchpad.fryplugin",
         "sha256": "859c929b85c6108fa55ca3d98a1d5dcbee5821a442e9d379e447796a885c03c9",
         "formattedSize": "15 KB",
         "minHostVersion": "0.1.0",
@@ -511,7 +511,7 @@
     "license": "MIT",
     "isVerified": true,
     "isOfficial": true,
-    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.frypdf.plugin.csharpeditor/v2.0.5/CSharpEditor.fryplugin",
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.frypdf.plugin.csharpeditor/v2.0.5/CSharpEditor.fryplugin",
     "tags": [
       "csharp",
       "editor",
@@ -557,7 +557,7 @@
       {
         "version": "2.0.5",
         "releaseDate": "2026-10-14",
-        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.frypdf.plugin.csharpeditor/v2.0.5/CSharpEditor.fryplugin",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.frypdf.plugin.csharpeditor/v2.0.5/CSharpEditor.fryplugin",
         "sha256": "52628fcc47a2b8e869a5dca7a57c5a1d2c873e9a446ce00cc44bb94950b8baf1",
         "formattedSize": "12.8 MB",
         "minHostVersion": "1.0.0",
@@ -567,7 +567,7 @@
       {
         "version": "2.0.4",
         "releaseDate": "2026-10-09",
-        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.frypdf.plugin.csharpeditor/v2.0.4/CSharpEditor.fryplugin",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.frypdf.plugin.csharpeditor/v2.0.4/CSharpEditor.fryplugin",
         "sha256": "c20bc144963d2bfe3ed7ff8858ab7cc731e69c10dff5fd95d13f370a58f0fdae",
         "formattedSize": "12.6 MB",
         "minHostVersion": "1.0.0",
@@ -577,7 +577,7 @@
       {
         "version": "2.0.3",
         "releaseDate": "2026-10-04",
-        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.frypdf.plugin.csharpeditor/v2.0.3/CSharpEditor.fryplugin",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.frypdf.plugin.csharpeditor/v2.0.3/CSharpEditor.fryplugin",
         "sha256": "1fd34ad39ceebab814280140052f15917b510f536983566046182414095bd631",
         "formattedSize": "8.2 MB",
         "minHostVersion": "1.0.0",
@@ -587,7 +587,7 @@
       {
         "version": "2.0.2",
         "releaseDate": "2026-10-02",
-        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.frypdf.plugin.csharpeditor/v2.0.2/CSharpEditor.fryplugin",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.frypdf.plugin.csharpeditor/v2.0.2/CSharpEditor.fryplugin",
         "sha256": "fd7ceba236b4dd67b159c9390860deece6adc6c35f3f9dac01b619335cd0cace",
         "formattedSize": "6.8 MB",
         "minHostVersion": "1.0.0",
@@ -597,7 +597,7 @@
       {
         "version": "2.0.1",
         "releaseDate": "2026-10-01",
-        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.frypdf.plugin.csharpeditor/v2.0.1/CSharpEditor.fryplugin",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.frypdf.plugin.csharpeditor/v2.0.1/CSharpEditor.fryplugin",
         "sha256": "4f58af7cf69887db15f343605106699b146352e5adc6cc44f27c96ec5f08d93d",
         "formattedSize": "6.8 MB",
         "minHostVersion": "1.0.0",
@@ -607,7 +607,7 @@
       {
         "version": "1.0.6",
         "releaseDate": "2026-09-26",
-        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.frypdf.plugin.csharpeditor/v1.0.6/CSharpEditor.fryplugin",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.frypdf.plugin.csharpeditor/v1.0.6/CSharpEditor.fryplugin",
         "sha256": "8a9cb0bfe56b4f4253756cabc6114f4a47a17a5e4b3ac01240e9767fad59da5f",
         "formattedSize": "5.0 MB",
         "minHostVersion": "1.0.0",
@@ -617,7 +617,7 @@
       {
         "version": "1.0.5",
         "releaseDate": "2026-09-25",
-        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.frypdf.plugin.csharpeditor/v1.0.5/CSharpEditor.fryplugin",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.frypdf.plugin.csharpeditor/v1.0.5/CSharpEditor.fryplugin",
         "sha256": "e71e9f0bb40db2e3f448acb23c6479302f088ccf7049177df22fc0df09f07a9c",
         "formattedSize": "4.9 MB",
         "minHostVersion": "1.0.0",
@@ -627,7 +627,7 @@
       {
         "version": "1.0.4",
         "releaseDate": "2026-09-24",
-        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.frypdf.plugin.csharpeditor/v1.0.4/CSharpEditor.fryplugin",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.frypdf.plugin.csharpeditor/v1.0.4/CSharpEditor.fryplugin",
         "sha256": "b59f0fc4adc60e8323aed70818701f7efbdd1383a4ea00252fd5790492e700e9",
         "formattedSize": "4.5 MB",
         "minHostVersion": "1.0.0",
@@ -637,7 +637,7 @@
       {
         "version": "1.0.3",
         "releaseDate": "2026-09-24",
-        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.frypdf.plugin.csharpeditor/v1.0.3/CSharpEditor.fryplugin",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.frypdf.plugin.csharpeditor/v1.0.3/CSharpEditor.fryplugin",
         "sha256": "97002b3dbcaa5633579a1121906ff7839dc0fabb97228808817ef8322a67302c",
         "formattedSize": "4.4 MB",
         "minHostVersion": "1.0.0",
@@ -647,7 +647,7 @@
       {
         "version": "1.0.2",
         "releaseDate": "2026-09-21",
-        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.frypdf.plugin.csharpeditor/v1.0.2/CSharpEditor.fryplugin",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.frypdf.plugin.csharpeditor/v1.0.2/CSharpEditor.fryplugin",
         "sha256": "a24d93d478d17a7d93efe5e63d46d6c7d61a8ce7ded7f3f2fe705751eb81ff85",
         "formattedSize": "4.4 MB",
         "minHostVersion": "1.0.0",
@@ -657,7 +657,7 @@
       {
         "version": "1.0.1",
         "releaseDate": "2026-09-20",
-        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.frypdf.plugin.csharpeditor/v1.0.1/CSharpEditor.fryplugin",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.frypdf.plugin.csharpeditor/v1.0.1/CSharpEditor.fryplugin",
         "sha256": "9751251e4c95db7a2d47c09b1f852284f53cc635740ea4381e9c15175c9d3380",
         "formattedSize": "4.4 MB",
         "minHostVersion": "1.0.0",
@@ -667,7 +667,7 @@
       {
         "version": "1.0.0",
         "releaseDate": "2026-09-15",
-        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.frypdf.plugin.csharpeditor/v1.0.0/CSharpEditor.fryplugin",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.frypdf.plugin.csharpeditor/v1.0.0/CSharpEditor.fryplugin",
         "sha256": "66bdc8e62ca065d1194794b1830d7e6f8aaee49e987df63980654f37a5b9bfac",
         "formattedSize": "3.8 MB",
         "minHostVersion": "1.0.0",
@@ -694,7 +694,7 @@
     "license": "MIT",
     "isVerified": true,
     "isOfficial": true,
-    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.frypdf.plugin.chess/v1.0.0/Chess.fryplugin",
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.frypdf.plugin.chess/v1.0.0/Chess.fryplugin",
     "tags": [
       "game",
       "chess",
@@ -722,7 +722,7 @@
       {
         "version": "1.0.0",
         "releaseDate": "2026-09-20",
-        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.frypdf.plugin.chess/v1.0.0/Chess.fryplugin",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.frypdf.plugin.chess/v1.0.0/Chess.fryplugin",
         "sha256": "cbd426aab82ac3b1ec6960f99cef5a50d403247f86ea56076fa13e1e8469d848",
         "formattedSize": "39 KB",
         "minHostVersion": "1.0.0",
@@ -749,7 +749,7 @@
     "license": "MIT",
     "isVerified": true,
     "isOfficial": true,
-    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.frypdf.plugin.tictactoe/v1.1.0/TicTacToe.fryplugin",
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.frypdf.plugin.tictactoe/v1.1.0/TicTacToe.fryplugin",
     "tags": [
       "game",
       "tictactoe",
@@ -776,7 +776,7 @@
       {
         "version": "1.1.0",
         "releaseDate": "2026-09-14",
-        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.frypdf.plugin.tictactoe/v1.1.0/TicTacToe.fryplugin",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.frypdf.plugin.tictactoe/v1.1.0/TicTacToe.fryplugin",
         "sha256": "8491624371414d9e971c2eca09bb84868ef4fb941bff6b3c0b3c80081773903e",
         "formattedSize": "19 KB",
         "minHostVersion": "1.0.0",
@@ -786,7 +786,7 @@
       {
         "version": "1.0.0",
         "releaseDate": "2026-09-20",
-        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.frypdf.plugin.tictactoe/v1.0.0/TicTacToe.fryplugin",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.frypdf.plugin.tictactoe/v1.0.0/TicTacToe.fryplugin",
         "sha256": "b0e71db12625b7493c3dd638756e480a81744151017cb466773ca62e64dae126",
         "formattedSize": "19 KB",
         "minHostVersion": "1.0.0",
@@ -813,7 +813,7 @@
     "license": "MIT",
     "isVerified": true,
     "isOfficial": true,
-    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/frypdf.overlay.snake/v1.0.0/Snake.fryplugin",
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/frypdf.overlay.snake/v1.0.0/Snake.fryplugin",
     "tags": [
       "game",
       "snake",
@@ -841,7 +841,7 @@
       {
         "version": "1.0.0",
         "releaseDate": "2026-09-20",
-        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/frypdf.overlay.snake/v1.0.0/Snake.fryplugin",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/frypdf.overlay.snake/v1.0.0/Snake.fryplugin",
         "sha256": "02c4fbb6ccea195035a898f1086a14935736fba878ba21abc7fc75c69aaf5844",
         "formattedSize": "20 KB",
         "minHostVersion": "1.0.0",
@@ -868,7 +868,7 @@
     "license": "MIT",
     "isVerified": true,
     "isOfficial": true,
-    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/frypdf.overlay.scratchpad/v1.0.0/Scratchpad.fryplugin",
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/frypdf.overlay.scratchpad/v1.0.0/Scratchpad.fryplugin",
     "tags": [
       "scratchpad",
       "notes",
@@ -894,7 +894,7 @@
       {
         "version": "1.0.0",
         "releaseDate": "2026-09-20",
-        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/frypdf.overlay.scratchpad/v1.0.0/Scratchpad.fryplugin",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/frypdf.overlay.scratchpad/v1.0.0/Scratchpad.fryplugin",
         "sha256": "ab06e23007b484de43d209eaec01aae06060e54402acf9f6fea6cdbd351a2150",
         "formattedSize": "14 KB",
         "minHostVersion": "1.0.0",
@@ -921,7 +921,7 @@
     "license": "MIT",
     "isVerified": true,
     "isOfficial": true,
-    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/frypdf.overlay.telemetry/v1.0.0/Telemetry.fryplugin",
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/frypdf.overlay.telemetry/v1.0.0/Telemetry.fryplugin",
     "tags": [
       "telemetry",
       "diagnostics",
@@ -947,7 +947,7 @@
       {
         "version": "1.0.0",
         "releaseDate": "2026-09-20",
-        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/frypdf.overlay.telemetry/v1.0.0/Telemetry.fryplugin",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/frypdf.overlay.telemetry/v1.0.0/Telemetry.fryplugin",
         "sha256": "5805453b8be6143470a52520788bdcb89abcb3ee6419f49fd49589fefa3d9447",
         "formattedSize": "13 KB",
         "minHostVersion": "1.0.0",
@@ -974,7 +974,7 @@
     "license": "MIT",
     "isVerified": true,
     "isOfficial": true,
-    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/frypdf.overlay.musicplayer/v1.0.0/MusicPlayer.fryplugin",
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/frypdf.overlay.musicplayer/v1.0.0/MusicPlayer.fryplugin",
     "tags": [
       "music",
       "audio",
@@ -1002,7 +1002,7 @@
       {
         "version": "1.0.0",
         "releaseDate": "2026-10-15",
-        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/frypdf.overlay.musicplayer/v1.0.0/MusicPlayer.fryplugin",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/frypdf.overlay.musicplayer/v1.0.0/MusicPlayer.fryplugin",
         "sha256": "b474bfee4474b6870a8935bc573dc520caba1f6201d0a930e8f0cebb02344ec2",
         "formattedSize": "7.1 MB",
         "minHostVersion": "1.0.0",
@@ -1029,7 +1029,7 @@
     "license": "MIT",
     "isVerified": true,
     "isOfficial": true,
-    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/frypdf.overlay.imageeditor/v3.2.0/ImageEditor.fryplugin",
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/frypdf.overlay.imageeditor/v3.2.0/ImageEditor.fryplugin",
     "tags": [
       "adjustments",
       "brushes",
@@ -1079,7 +1079,7 @@
       {
         "version": "3.2.0",
         "releaseDate": "2026-10-15",
-        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/frypdf.overlay.imageeditor/v3.2.0/ImageEditor.fryplugin",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/frypdf.overlay.imageeditor/v3.2.0/ImageEditor.fryplugin",
         "sha256": "ef7a7b3586b9768f736f5ff861a20b92768faf3584f9aa3f33daefdf9051c494",
         "formattedSize": "754 KB",
         "minHostVersion": "1.0.0",
@@ -1089,7 +1089,7 @@
       {
         "version": "3.1.0",
         "releaseDate": "2026-10-12",
-        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/frypdf.overlay.imageeditor/v3.1.0/ImageEditor.fryplugin",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/frypdf.overlay.imageeditor/v3.1.0/ImageEditor.fryplugin",
         "sha256": "40e37a9aa8c5fde023c16ccccdc56986654b0caad45d4675d2f0d67acfd3f287",
         "formattedSize": "577 KB",
         "minHostVersion": "1.0.0",
@@ -1099,7 +1099,7 @@
       {
         "version": "3.0.0",
         "releaseDate": "2026-10-11",
-        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/frypdf.overlay.imageeditor/v3.0.0/ImageEditor.fryplugin",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/frypdf.overlay.imageeditor/v3.0.0/ImageEditor.fryplugin",
         "sha256": "74a20199dac26689ace5a70ee62b22bb4ae064293346a6eed0a645dc7faf3cd6",
         "formattedSize": "217 KB",
         "minHostVersion": "1.0.0",

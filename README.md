@@ -52,13 +52,13 @@ Official typography and multilingual font library distributed via CDN for **FryP
 - **Total Library Size**: ~80.7 MB
 - **Raw CDN Endpoint**:
   ```
-  https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/fonts/{fileName}
+  https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/fonts/{fileName}
   ```
 
 ### Usage in FryPDF
 Fonts are fetched on demand via `FontPackageService.cs`:
 ```csharp
-public const string FontCdnBaseUrl = "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/fonts";
+public const string FontCdnBaseUrl = "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/fonts";
 ```
 Downloaded fonts are cached locally in `AppData/FryPDF/FontPackages/` and dynamically registered into QuestPDF and Avalonia graphics pipelines without requiring application restarts.
 

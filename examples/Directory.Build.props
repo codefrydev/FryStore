@@ -7,8 +7,8 @@
     <Authors>Code Fry Dev</Authors>
     <Company>Code Fry Dev</Company>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/codefrydev/PDFCreator-resources</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/codefrydev/PDFCreator-resources</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/codefrydev/FryStore</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/codefrydev/FryStore</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageReadmeFile Condition="Exists('README.md')">README.md</PackageReadmeFile>
   </PropertyGroup>

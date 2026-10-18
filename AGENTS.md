@@ -1,6 +1,6 @@
 # Agent Development Guidelines: FryPDF Resources & Plugin Hub
 
-This repository (`codefrydev/PDFCreator-resources` / `PDFCreator-Fonts`) is the official **Resources, Typography CDN, and Remote Plugin Marketplace Ecosystem** for **FryPDF** (the modern .NET 10 Avalonia cross-platform document studio).
+This repository (`codefrydev/FryStore` / `PDFCreator-Fonts`) is the official **Resources, Typography CDN, and Remote Plugin Marketplace Ecosystem** for **FryPDF** (the modern .NET 10 Avalonia cross-platform document studio).
 
 All AI agents, subagents, and human contributors working in this repository **must strictly adhere to the guidelines and mandates detailed below**.
 
@@ -9,7 +9,7 @@ All AI agents, subagents, and human contributors working in this repository **mu
 ## 1. Repository Anatomy
 
 ```
-PDFCreator-resources/
+FryStore/
 ├── AGENTS.md                                 # Master guidelines for AI agents & contributors
 ├── README.md                                 # Human-facing repository documentation
 ├── catalog.json -> plugins/catalog.json     # Root marketplace catalog symlink/reference
