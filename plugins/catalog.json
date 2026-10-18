@@ -3,20 +3,20 @@
     "id": "com.fryworld.circuit",
     "name": "FryCircuit Studio",
     "publisher": "Code Fry Dev",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "category": "Engineering & Simulation",
     "description": "Interactive SPICE-grade analog & digital schematic CAD studio and real-time MNA circuit simulator.",
     "longDescription": "Interactive SPICE-grade analog & digital schematic CAD studio and real-time MNA circuit simulator with 60 FPS transient solver, animated electron current particles, live node voltage badges, oscilloscope with dual-channel time-domain & FFT spectrum analysis, quantum Josephson junctions, Berkeley SPICE netlist export/import, and aerospace manufacturing BOM.",
     "rating": 5.0,
     "ratingCount": 10,
     "installCount": 100,
-    "formattedSize": "164 KB",
+    "formattedSize": "214 KB",
     "iconKind": "LightningBolt",
     "iconColorHex": "#00F0FF",
     "license": "MIT",
     "isVerified": true,
     "isOfficial": true,
-    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.circuit/v1.0.0/Circuit.fryplugin",
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.circuit/v1.0.1/Circuit.fryplugin",
     "websiteUrl": "https://codefrydev.in",
     "repositoryUrl": "https://github.com/PrashantUnity/FryCircuit",
     "tags": [
@@ -44,6 +44,16 @@
     ],
     "versions": [
       {
+        "version": "1.0.1",
+        "releaseDate": "2026-10-19",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.circuit/v1.0.1/Circuit.fryplugin",
+        "sha256": "ca2884bd0bd94d49e699336e99a02199c51f45d4a99cc2f4966044c4bbed31db",
+        "formattedSize": "214 KB",
+        "minHostVersion": "0.1.0",
+        "targetFramework": "net10.0",
+        "releaseNotes": "Adopt FryWorld.Sdk 0.3.0 universal scoped keyboard shortcut registry with hotkeys (W for wire, V for select, X for cut, R for rotate, F for zoom-to-fit, Delete, Mod+Z for undo, Mod+Shift+Z for redo) and dynamic tool mode routing."
+      },
+      {
         "version": "1.0.0",
         "releaseDate": "2026-10-18",
         "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.circuit/v1.0.0/Circuit.fryplugin",
@@ -54,7 +64,7 @@
         "releaseNotes": "Initial official release of FryCircuit Studio plugin for FryWorld. Features 60 FPS real-time MNA transient solver, animated electron current particles, live node voltage badges, oscilloscope with dual-channel time-domain & FFT spectrum analysis, quantum Josephson junctions, Berkeley SPICE netlist export/import, and aerospace manufacturing BOM."
       }
     ],
-    "sha256": "0f31ee7aa83b4805c319f84ca36ba19cb3951d1b97d532512714775eabf22261"
+    "sha256": "ca2884bd0bd94d49e699336e99a02199c51f45d4a99cc2f4966044c4bbed31db"
   },
   {
     "id": "com.fryworld.csharpstudio",
