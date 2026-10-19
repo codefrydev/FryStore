@@ -3,7 +3,7 @@
     "id": "com.fryworld.circuit",
     "name": "FryCircuit Studio",
     "publisher": "Code Fry Dev",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "category": "Engineering & Simulation",
     "description": "Interactive SPICE-grade analog & digital schematic CAD studio and real-time MNA circuit simulator.",
     "longDescription": "Interactive SPICE-grade analog & digital schematic CAD studio and real-time MNA circuit simulator with 60 FPS transient solver, animated electron current particles, live node voltage badges, oscilloscope with dual-channel time-domain & FFT spectrum analysis, quantum Josephson junctions, Berkeley SPICE netlist export/import, and aerospace manufacturing BOM.",
@@ -16,7 +16,7 @@
     "license": "MIT",
     "isVerified": true,
     "isOfficial": true,
-    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.circuit/v1.0.2/Circuit.fryplugin",
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.circuit/v1.0.3/Circuit.fryplugin",
     "websiteUrl": "https://codefrydev.in",
     "repositoryUrl": "https://github.com/PrashantUnity/FryCircuit",
     "tags": [
@@ -35,14 +35,24 @@
     ],
     "contributedFeatures": [
       "Navigation: Circuit Studio",
-      "Overlay: \u26a1 Circuit Studio",
+      "Overlay: ⚡ Circuit Studio",
       "Command: Open Circuit Studio",
-      "Status Bar: \u26a1 Circuit"
+      "Status Bar: ⚡ Circuit"
     ],
     "dependencies": [
       "FryWorld.Sdk >= 0.1.0"
     ],
     "versions": [
+      {
+        "version": "1.0.3",
+        "releaseDate": "2026-10-19",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.circuit/v1.0.3/Circuit.fryplugin",
+        "sha256": "133f8327c18ca52ebf4b7d7d1608fe9179b92f3e6382d891cb7a6e6290b24a46",
+        "formattedSize": "249 KB",
+        "minHostVersion": "0.1.0",
+        "targetFramework": "net10.0",
+        "releaseNotes": "Fix real-time multi-canvas invalidation and unify shared ViewModel state across main studio, overlays, and MCP agents."
+      },
       {
         "version": "1.0.2",
         "releaseDate": "2026-10-19",
