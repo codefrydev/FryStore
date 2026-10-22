@@ -3,20 +3,20 @@
     "id": "com.fryworld.circuit",
     "name": "FryCircuit Studio",
     "publisher": "Code Fry Dev",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "category": "Engineering & Simulation",
     "description": "Interactive SPICE-grade analog & digital schematic CAD studio and real-time MNA circuit simulator.",
     "longDescription": "Interactive SPICE-grade analog & digital schematic CAD studio and real-time MNA circuit simulator with 60 FPS transient solver, animated electron current particles, live node voltage badges, oscilloscope with dual-channel time-domain & FFT spectrum analysis, quantum Josephson junctions, Berkeley SPICE netlist export/import, and aerospace manufacturing BOM.",
     "rating": 5.0,
     "ratingCount": 10,
     "installCount": 100,
-    "formattedSize": "249 KB",
+    "formattedSize": "282 KB",
     "iconKind": "LightningBolt",
     "iconColorHex": "#00F0FF",
     "license": "MIT",
     "isVerified": true,
     "isOfficial": true,
-    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.circuit/v1.0.3/Circuit.fryplugin",
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.circuit/v1.0.4/Circuit.fryplugin",
     "websiteUrl": "https://codefrydev.in",
     "repositoryUrl": "https://github.com/PrashantUnity/FryCircuit",
     "tags": [
@@ -35,14 +35,24 @@
     ],
     "contributedFeatures": [
       "Navigation: Circuit Studio",
-      "Overlay: ⚡ Circuit Studio",
+      "Overlay: \u26a1 Circuit Studio",
       "Command: Open Circuit Studio",
-      "Status Bar: ⚡ Circuit"
+      "Status Bar: \u26a1 Circuit"
     ],
     "dependencies": [
       "FryWorld.Sdk >= 0.1.0"
     ],
     "versions": [
+      {
+        "version": "1.0.4",
+        "releaseDate": "2026-10-22",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.circuit/v1.0.4/Circuit.fryplugin",
+        "sha256": "7f0b9f2c8ddbbc8283e893ed52554e747b1a716504e53d07b2f1968ca73f34c5",
+        "formattedSize": "282 KB",
+        "minHostVersion": "0.1.0",
+        "targetFramework": "net10.0",
+        "releaseNotes": "Add Model Context Protocol (MCP) tool self-documentation using raw string literals, complete EDA/CAD documentation suite, semantic net/component labeling, and dynamic parameter modification."
+      },
       {
         "version": "1.0.3",
         "releaseDate": "2026-10-19",
@@ -84,26 +94,26 @@
         "releaseNotes": "Initial official release of FryCircuit Studio plugin for FryWorld. Features 60 FPS real-time MNA transient solver, animated electron current particles, live node voltage badges, oscilloscope with dual-channel time-domain & FFT spectrum analysis, quantum Josephson junctions, Berkeley SPICE netlist export/import, and aerospace manufacturing BOM."
       }
     ],
-    "sha256": "e1b6beb01ffc5f19ac86d5420615922b91d1fca891a9fcc62bb8ee79fb575587"
+    "sha256": "7f0b9f2c8ddbbc8283e893ed52554e747b1a716504e53d07b2f1968ca73f34c5"
   },
   {
     "id": "com.fryworld.csharpstudio",
     "name": "FrySharp C# Studio",
     "publisher": "Code Fry Dev",
-    "version": "2.0.5",
+    "version": "2.0.7",
     "category": "Developer & Tools",
     "description": "Full-featured C# studio & polyglot notebooks with Roslyn analysis, interactive visualization, and algorithmic execution.",
     "longDescription": "Full-featured C# studio & polyglot notebooks with Roslyn analysis, interactive visualization, and algorithmic execution.",
     "rating": 5.0,
     "ratingCount": 10,
     "installCount": 100,
-    "formattedSize": "15.1 MB",
+    "formattedSize": "12.9 MB",
     "iconKind": "CodeBraces",
     "iconColorHex": "#2563EB",
     "license": "MIT",
     "isVerified": true,
     "isOfficial": true,
-    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.csharpstudio/v2.0.5/CSharpEditor.fryplugin",
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.csharpstudio/v2.0.7/CSharpEditor.fryplugin",
     "websiteUrl": "https://codefrydev.in",
     "repositoryUrl": "https://github.com/codefrydev/FrySharp",
     "tags": [
@@ -128,6 +138,16 @@
     ],
     "versions": [
       {
+        "version": "2.0.7",
+        "releaseDate": "2026-10-22",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.csharpstudio/v2.0.7/CSharpEditor.fryplugin",
+        "sha256": "1dc6726ae51e5509fcae358d35deaf77c9a4a3faa36d4a695fb843de04532791",
+        "formattedSize": "12.9 MB",
+        "minHostVersion": "0.1.0",
+        "targetFramework": "net10.0",
+        "releaseNotes": "Release 2.0.7: Adds universal Model Context Protocol (MCP) tool suite for autonomous AI agents (code inspection, Roslyn diagnostics, in-memory execution, script creation), safe UI thread dispatch, and FryWorld.Sdk 0.5.0 integration."
+      },
+      {
         "version": "2.0.5",
         "releaseDate": "2026-10-15",
         "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.csharpstudio/v2.0.5/CSharpEditor.fryplugin",
@@ -138,7 +158,7 @@
         "releaseNotes": "Release 2.0.5: Decouples headless runtime engine into FrySharp.Core and introduces the FrySharp Sidecar JSON-RPC engine server. Enhances multi-language notebook execution stability for SQL, Java, Go, Rust, and C++ kernels with robust process launching, argument quoting, and isolated environment variable management. Eliminates UI thread stalls by refactoring activity and loading animations to asynchronous loops. Resolves async session restart and live diagnostics race conditions, and adds environment-gated test attributes for resilient cross-platform testing."
       }
     ],
-    "sha256": "de98d5ea0e0d0698d5131a04961d0065dff012bbf5e7b456822c33383bf98144"
+    "sha256": "1dc6726ae51e5509fcae358d35deaf77c9a4a3faa36d4a695fb843de04532791"
   },
   {
     "id": "com.fryworld.imageeditor",
