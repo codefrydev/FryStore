@@ -34,3 +34,6 @@ Desktop.ini
 .cache/
 
 IdeaSample*
+
+# Excluded private plugin repositories
+examples/ImageEditorPlugin/

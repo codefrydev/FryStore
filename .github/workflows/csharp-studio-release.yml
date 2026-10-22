@@ -56,8 +56,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          submodules: recursive
+      - name: Checkout C# Studio Submodule
+        run: git submodule update --init --recursive examples/CSharpEditorPlugin
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '10.0.x'
@@ -137,8 +137,8 @@ jobs:
       PYTHONIOENCODING: utf-8
     steps:
       - uses: actions/checkout@v4
-        with:
-          submodules: recursive
+      - name: Checkout C# Studio Submodule
+        run: git submodule update --init --recursive examples/CSharpEditorPlugin
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '10.0.x'
@@ -206,8 +206,8 @@ jobs:
       PYTHONIOENCODING: utf-8
     steps:
       - uses: actions/checkout@v4
-        with:
-          submodules: recursive
+      - name: Checkout C# Studio Submodule
+        run: git submodule update --init --recursive examples/CSharpEditorPlugin
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '10.0.x'
@@ -232,8 +232,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          submodules: recursive
+      - name: Checkout C# Studio Submodule
+        run: git submodule update --init --recursive examples/CSharpEditorPlugin
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '10.0.x'

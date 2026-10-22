@@ -247,6 +247,11 @@ def validate_example_plugins() -> int:
         csproj_files = [f for f in plugin_dir.glob("*.csproj") if not f.name.endswith(".Runner.csproj")]
         runner_dir = plugin_dir / "Runner"
 
+        # Exclude ImageEditorPlugin or uninitialized submodules from project-level validation
+        if pname == "ImageEditorPlugin" or not any(plugin_dir.iterdir()):
+            log_warn(f"[{pname}] Excluded or not initialized; skipping example project checks.")
+            continue
+
         # Check manifest
         if not manifest_path.exists():
             log_fail(f"[{pname}] Missing plugin.json manifest.")
