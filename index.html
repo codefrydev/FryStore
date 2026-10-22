@@ -2306,21 +2306,53 @@ python3 tools/package_runner.py csharpeditor --os macos --version 1.0.1
        -------------------------------------------------------------------------- */
     const PLUGINS_DATA = [
       {
+        id: "com.fryworld.circuit",
+        name: "FryCircuit Studio",
+        publisher: "Code Fry Dev",
+        version: "1.0.4",
+        category: "Engineering & Simulation",
+        description: "Interactive SPICE-grade analog & digital schematic CAD studio and real-time MNA circuit simulator.",
+        longDescription: "Interactive SPICE-grade analog & digital schematic CAD studio and real-time MNA circuit simulator with 60 FPS transient solver, animated electron current particles, live node voltage badges, oscilloscope with dual-channel time-domain & FFT spectrum analysis, quantum Josephson junctions, Berkeley SPICE netlist export/import, aerospace manufacturing BOM, and native Model Context Protocol (MCP) AI tools.",
+        rating: 5.0,
+        ratingCount: 35,
+        installCount: 420,
+        formattedSize: "282 KB",
+        iconKind: "LightningBolt",
+        iconColorHex: "#00F0FF",
+        iconEmoji: "⚡",
+        downloadUrl: "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.circuit/v1.0.4/Circuit.fryplugin",
+        tags: ["circuit", "cad", "spice", "simulation", "electronics", "eda", "studio", "engineering"],
+        highlights: [
+          "Interactive Schematic Canvas with 60 FPS MNA Transient Solver",
+          "Dual-Channel Time-Domain & FFT Spectrum Oscilloscope",
+          "Live Electron Current Flow Particles & Node Voltage Badges",
+          "Berkeley SPICE Netlist & Aerospace BOM Drawers",
+          "Autonomous Model Context Protocol (MCP) EDA Agent Tools"
+        ],
+        contributedFeatures: [
+          "Workspace Studio: Circuit Studio Full-Viewport Navigation Page",
+          "Shell Overlay: ⚡ Circuit Studio Floating Panel",
+          "Command Palette: 'Open Circuit Studio' (Ctrl+Alt+C)",
+          "Status Bar: Clickable '⚡ Circuit' Indicator Pill"
+        ],
+        sha256: "7f0b9f2c8ddbbc8283e893ed52554e747b1a716504e53d07b2f1968ca73f34c5"
+      },
+      {
         id: "com.fryworld.csharpstudio",
         name: "FrySharp C# Studio",
         publisher: "Code Fry Dev",
-        version: "2.0.5",
+        version: "2.0.7",
         category: "Developer & Tools",
         description: "Interactive in-app C# development and automation studio featuring a dedicated project/script manager, syntax-highlighted editor, real-time Roslyn compilation diagnostics, and in-memory execution.",
         longDescription: "Bring full-featured C# development and script automation directly into your FryWorld workspace! This studio tool provides a dual-page workflow: a Script Management Hub to organize and template your scripts, and a dedicated C# Code Studio powered by AvaloniaEdit and Roslyn.",
         rating: 5.0,
         ratingCount: 24,
         installCount: 310,
-        formattedSize: "15.1 MB",
+        formattedSize: "12.9 MB",
         iconKind: "CodeBraces",
         iconColorHex: "#10B981",
         iconEmoji: "💻",
-        downloadUrl: "https://raw.githubusercontent.com/codefrydev/PDFCreator-resources/refs/heads/main/plugins/com.fryworld.csharpstudio/v2.0.5/CSharpEditor.fryplugin",
+        downloadUrl: "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.csharpstudio/v2.0.7/CSharpEditor.fryplugin",
         tags: ["csharp", "editor", "roslyn", "scripting", "automation", "studio", "developer"],
         highlights: [
           "Two-Page Workflow: Script Management Hub & Full Code Studio",
@@ -2335,7 +2367,7 @@ python3 tools/package_runner.py csharpeditor --os macos --version 1.0.1
           "Status Bar: Clickable '{ } C# Studio' Widget",
           "Ribbon: Plugins Tab > Tools > C# Studio Action"
         ],
-        sha256: "de98d5ea0e0d0698d5131a04961d0065dff012bbf5e7b456822c33383bf98144"
+        sha256: "1dc6726ae51e5509fcae358d35deaf77c9a4a3faa36d4a695fb843de04532791"
       },
       {
         id: "com.fryworld.chess",
