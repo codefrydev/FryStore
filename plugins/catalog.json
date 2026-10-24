@@ -1,5 +1,62 @@
 [
   {
+    "id": "com.fryworld.math",
+    "name": "FryMath Studio",
+    "publisher": "Code Fry Dev",
+    "version": "1.0.0",
+    "category": "Education & Science",
+    "description": "Interactive mathematics studio, symbolic CAS, and conceptual visual learning laboratory.",
+    "longDescription": "Interactive mathematics studio combining 60 FPS vector canvases with direct manipulation, symbolic differentiation, numerical calculus, linear algebra matrix warping, Fourier epicycles with live audio synthesizer, Galton board normal distribution simulator, and Wolfram-style multi-pod solver.",
+    "rating": 5.0,
+    "ratingCount": 10,
+    "installCount": 100,
+    "formattedSize": "310 KB",
+    "iconKind": "Calculator",
+    "iconColorHex": "#A855F7",
+    "license": "MIT",
+    "isVerified": true,
+    "isOfficial": true,
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.math/v1.0.0/Math.fryplugin",
+    "websiteUrl": "https://codefrydev.in",
+    "repositoryUrl": "https://github.com/PrashantUnity/FryMath",
+    "tags": [
+      "education & science",
+      "math",
+      "calculus",
+      "cas",
+      "linear algebra",
+      "fourier",
+      "fryworld",
+      "plugin"
+    ],
+    "highlights": [
+      "Visual Calculus with Live Math Probe & Osculating Curvature",
+      "Interactive Matrix Transformation Grid Morpher & Eigenvectors",
+      "Fourier Epicycles & Harmonic Synthesizer with Audio Playback",
+      "Galton Board (Plinko) Physics Simulator for Normal Distribution"
+    ],
+    "contributedFeatures": [
+      "Navigation: Math Studio",
+      "Overlay: ∑ Math Studio",
+      "Command: Open Math Studio",
+      "Status Bar: ∑ Math"
+    ],
+    "dependencies": [
+      "FryWorld.Sdk >= 0.5.0"
+    ],
+    "versions": [
+      {
+        "version": "1.0.0",
+        "releaseDate": "2026-10-24",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.math/v1.0.0/Math.fryplugin",
+        "formattedSize": "310 KB",
+        "minHostVersion": "0.5.0",
+        "targetFramework": "net10.0",
+        "releaseNotes": "Initial release of FryMath Studio: interactive 2D calculus canvas with live Math Probe, matrix transformation grid morpher, Fourier epicycle and wave synthesizer with audio, Galton board normal distribution simulator, and Wolfram-style multi-pod solver."
+      }
+    ]
+  },
+  {
     "id": "com.fryworld.circuit",
     "name": "FryCircuit Studio",
     "publisher": "Code Fry Dev",
