@@ -1,0 +1,32 @@
+{
+  "id": "com.fryworld.imageeditor",
+  "name": "Image Editor",
+  "version": "3.2.1",
+  "author": "FryPDF Team",
+  "description": "Professional layered design and photo editing studio: modular docking workspace, inpainting Remove tool, Curves, Liquify, Shadows/Highlights, Black & White adjustments, text warp, Grd/Abr/Patterns and FITS/PCX/KRA codecs, OpenType typography, layers panel, and template gallery.",
+  "releaseNotes": "Adds complete high-fidelity engine PSD/PSB import and layering pipeline: full nested layer group hierarchy with PassThrough blending, vector masks and live shapes (stroke/fill), TySh OpenType typography runs, 16 adjustment layers, Smart Objects, advanced blending, BlendIf ranges, and layer effects (drop shadow, glows, bevel/emboss, overlays).",
+  "entryPoint": "ImageEditorPlugin.dll",
+  "icon": "ImageEditOutline",
+  "dependencies": [],
+  "settingsSchema": {
+    "DefaultBackground": {
+      "type": "select",
+      "label": "Default Canvas Background",
+      "description": "Starting canvas background color when the editor opens.",
+      "options": ["White", "Black", "Transparent"],
+      "default": "White"
+    },
+    "DefaultCanvasWidth": {
+      "type": "integer",
+      "label": "Canvas Width (px)",
+      "description": "Default canvas width in pixels.",
+      "default": 640
+    },
+    "DefaultCanvasHeight": {
+      "type": "integer",
+      "label": "Canvas Height (px)",
+      "description": "Default canvas height in pixels.",
+      "default": 480
+    }
+  }
+}
