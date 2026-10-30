@@ -311,7 +311,6 @@
         "releaseNotes": "Adds inpainting Remove tool, Shadows/Highlights and Black & White adjustments, Curves and Liquify engines, text warp Bezier distortion, expanded codecs (Adobe Grd/Abr/Patterns, FITS, PCX, KRA), OpenType typography features, color range selection, and enhanced studio workflows."
       }
     ],
-    "sha256": "cd23c929a4d14b63b2a200edf5c90e2f6167b327f940a3016c75f1b8791fb52a"
   },
   {
     "id": "com.fryworld.snake",
@@ -1276,6 +1275,5 @@
         "releaseNotes": "Release v3.0.0 of Image Editor."
       }
     ],
-    "sha256": "cd23c929a4d14b63b2a200edf5c90e2f6167b327f940a3016c75f1b8791fb52a"
   }
 ]
