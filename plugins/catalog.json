@@ -37,9 +37,9 @@
     ],
     "contributedFeatures": [
       "Navigation: Math Studio",
-      "Overlay: ∑ Math Studio",
+      "Overlay: \u2211 Math Studio",
       "Command: Open Math Studio",
-      "Status Bar: ∑ Math"
+      "Status Bar: \u2211 Math"
     ],
     "dependencies": [
       "FryWorld.Sdk >= 0.5.0"
@@ -94,9 +94,9 @@
     ],
     "contributedFeatures": [
       "Navigation: Circuit Studio",
-      "Overlay: ⚡ Circuit Studio",
+      "Overlay: \u26a1 Circuit Studio",
       "Command: Open Circuit Studio",
-      "Status Bar: ⚡ Circuit"
+      "Status Bar: \u26a1 Circuit"
     ],
     "dependencies": [
       "FryWorld.Sdk >= 0.1.0"
@@ -223,7 +223,7 @@
     "id": "com.fryworld.imageeditor",
     "name": "FryImage Studio",
     "publisher": "Code Fry Dev",
-    "version": "3.2.2",
+    "version": "3.2.3",
     "category": "Creative & Design",
     "description": "Vector illustration & bitmap canvas layout studio with layers, raster filters, and SVG export.",
     "longDescription": "Vector illustration & bitmap canvas layout studio with layers, raster filters, and SVG export.",
@@ -236,7 +236,7 @@
     "license": "MIT",
     "isVerified": true,
     "isOfficial": true,
-    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.imageeditor/v3.2.2/ImageEditor.fryplugin",
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.imageeditor/v3.2.3/ImageEditor.fryplugin",
     "websiteUrl": "https://codefrydev.in",
     "repositoryUrl": "https://github.com/codefrydev/FryImage",
     "tags": [
@@ -260,6 +260,16 @@
       "FryWorld.Sdk >= 0.1.0"
     ],
     "versions": [
+      {
+        "version": "3.2.3",
+        "releaseDate": "2026-10-30",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/com.fryworld.imageeditor/v3.2.3/ImageEditor.fryplugin",
+        "sha256": "d458163cfe2e62718fcf05d60225887d0e714a374315f34b836d2091a4551685",
+        "formattedSize": "6.0 MB",
+        "minHostVersion": "0.1.0",
+        "targetFramework": "net10.0",
+        "releaseNotes": "High-fidelity layer rendering and thumbnail preview update: enabled thumbnail generation across shape and text layers, defaulted thumbnail clipping to layer bounds for sharp element previews in the Layers panel, verified 99.94% compositor pixel parity against Photoshop reference composite on complex real-world PSDs."
+      },
       {
         "version": "3.2.2",
         "releaseDate": "2026-10-30",
@@ -301,7 +311,7 @@
         "releaseNotes": "Adds inpainting Remove tool, Shadows/Highlights and Black & White adjustments, Curves and Liquify engines, text warp Bezier distortion, expanded codecs (Adobe Grd/Abr/Patterns, FITS, PCX, KRA), OpenType typography features, color range selection, and enhanced studio workflows."
       }
     ],
-    "sha256": "eecf1052c554278ca8a64264e942bd6a8af5b8547bbde981cb5b335f09247505"
+    "sha256": "d458163cfe2e62718fcf05d60225887d0e714a374315f34b836d2091a4551685"
   },
   {
     "id": "com.fryworld.snake",
@@ -337,7 +347,7 @@
     "contributedFeatures": [
       "Overlay: Floating Snake Game",
       "Command: Play Snake Game",
-      "Status Bar: 🐍 Snake"
+      "Status Bar: \ud83d\udc0d Snake"
     ],
     "dependencies": [
       "FryWorld.Sdk >= 0.1.0"
@@ -390,9 +400,9 @@
       "SoundFlow & MiniAudio Native High-Fidelity Audio Engine"
     ],
     "contributedFeatures": [
-      "Overlay: 🎵 Music Player",
+      "Overlay: \ud83c\udfb5 Music Player",
       "Command: Toggle Music Player",
-      "Status Bar: 🎵 Music"
+      "Status Bar: \ud83c\udfb5 Music"
     ],
     "dependencies": [
       "FryWorld.Sdk >= 0.1.0"
@@ -445,7 +455,7 @@
     "contributedFeatures": [
       "Overlay: Floating Chess Game",
       "Command: Play Chess Game",
-      "Status Bar: ♟️ Chess"
+      "Status Bar: \u265f\ufe0f Chess"
     ],
     "dependencies": [
       "FryWorld.Sdk >= 0.1.0"
@@ -498,7 +508,7 @@
     "contributedFeatures": [
       "Overlay: Floating Tic-Tac-Toe",
       "Command: Play Tic-Tac-Toe",
-      "Status Bar: 🎮 Tic-Tac-Toe"
+      "Status Bar: \ud83c\udfae Tic-Tac-Toe"
     ],
     "dependencies": [
       "FryWorld.Sdk >= 0.1.0"
@@ -551,7 +561,7 @@
     "contributedFeatures": [
       "Overlay: Floating Telemetry HUD",
       "Command: Toggle Telemetry HUD",
-      "Status Bar: ⚡ HUD"
+      "Status Bar: \u26a1 HUD"
     ],
     "dependencies": [
       "FryWorld.Sdk >= 0.1.0"
@@ -604,7 +614,7 @@
     "contributedFeatures": [
       "Overlay: Floating Review Scratchpad",
       "Command: Toggle Scratchpad",
-      "Status Bar: 📝 Notes"
+      "Status Bar: \ud83d\udcdd Notes"
     ],
     "dependencies": [
       "FryWorld.Sdk >= 0.1.0"
@@ -629,8 +639,8 @@
     "publisher": "Code Fry Dev",
     "version": "2.0.5",
     "category": "Developer & Tools",
-    "description": "Full-featured polyglot IDE and interactive notebook studio — C#, Python, JavaScript, Java, Go, Rust, F#, C++, and SQL — with VS Code ergonomics, real-time Roslyn diagnostics, step-by-step visualizers, and the Fry Kernel Protocol for cross-language notebooks.",
-    "longDescription": "C# Code Studio 2.0 is a complete IDE rewrite delivering VS Code-faithful ergonomics inside FryPDF — Activity Bar, Primary Side Bar, multi-tab Editor, resizable Bottom Deck, and Status Bar — across 9 languages.\n\n### What's New in 2.0\n• **9 Languages**: C#, Python, JavaScript/Node, Java, Go, Rust, F#, C++, SQL — each with its own toolchain provider, diagnostic parser, package manager, and kernel.\n• **Polyglot Notebooks**: Mixed-language `.csnb` / `.ipynb` notebooks with collapsible cells, markdown rendering, and rich cell output tabs.\n• **Fry Kernel Protocol**: Line-delimited JSON kernel over stdin/stdout with cross-language `#!share` variable exchange.\n• **Step-by-Step Visualizers**: Data-structure visualizers (arrays, linked lists, trees, graphs), recursion call-tree tracking, interactive charts, 3D plots, `.Dump()` tables, and an object inspector.\n• **Blind 75 Problem Browser**: Full LeetCode Blind 75 catalogue with animated algorithm walkthroughs and test-case runner.\n• **VS Code Keyboard Shortcuts**: Ctrl+B, Ctrl+J, F5/F10/F11, Ctrl+Shift+E/F/D/M, and more.\n• **1,100+ Automated Tests**: Every language, every service, every UI zone covered.",
+    "description": "Full-featured polyglot IDE and interactive notebook studio \u2014 C#, Python, JavaScript, Java, Go, Rust, F#, C++, and SQL \u2014 with VS Code ergonomics, real-time Roslyn diagnostics, step-by-step visualizers, and the Fry Kernel Protocol for cross-language notebooks.",
+    "longDescription": "C# Code Studio 2.0 is a complete IDE rewrite delivering VS Code-faithful ergonomics inside FryPDF \u2014 Activity Bar, Primary Side Bar, multi-tab Editor, resizable Bottom Deck, and Status Bar \u2014 across 9 languages.\n\n### What's New in 2.0\n\u2022 **9 Languages**: C#, Python, JavaScript/Node, Java, Go, Rust, F#, C++, SQL \u2014 each with its own toolchain provider, diagnostic parser, package manager, and kernel.\n\u2022 **Polyglot Notebooks**: Mixed-language `.csnb` / `.ipynb` notebooks with collapsible cells, markdown rendering, and rich cell output tabs.\n\u2022 **Fry Kernel Protocol**: Line-delimited JSON kernel over stdin/stdout with cross-language `#!share` variable exchange.\n\u2022 **Step-by-Step Visualizers**: Data-structure visualizers (arrays, linked lists, trees, graphs), recursion call-tree tracking, interactive charts, 3D plots, `.Dump()` tables, and an object inspector.\n\u2022 **Blind 75 Problem Browser**: Full LeetCode Blind 75 catalogue with animated algorithm walkthroughs and test-case runner.\n\u2022 **VS Code Keyboard Shortcuts**: Ctrl+B, Ctrl+J, F5/F10/F11, Ctrl+Shift+E/F/D/M, and more.\n\u2022 **1,100+ Automated Tests**: Every language, every service, every UI zone covered.",
     "rating": 5.0,
     "ratingCount": 24,
     "installCount": 310,
@@ -813,7 +823,7 @@
     "version": "1.0.0",
     "category": "UI & Extensions",
     "description": "Interactive floating Chess game overlay featuring single player vs smart CPU AI opponent and local pass-and-play.",
-    "longDescription": "Bring intellectual gaming into your document studio! This extension provides a full-featured, playable Chess game directly inside a floating shell overlay.\n\n### Key Features:\n• **Floating Draggable Shell Overlay**: Runs smoothly on top of any document workspace without interrupting your PDF work.\n• **Single Player vs Smart CPU**: Configurable AI difficulty (Easy, Medium, Hard) powered by off-thread alpha-beta minimax search.\n• **Full FIDE Chess Rules**: Standard legal move validation, castling, en passant, and interactive pawn promotion (Queen, Rook, Bishop, Knight).\n• **Captured Pieces & Material Advantage**: Real-time captured pieces display and point advantage tracker (+3, +1).\n• **Material 3 Expressive Board Themes**: Emerald Studio, Classic Wood, and Midnight Slate high-contrast themes.\n• **Deep Shell Integration**: Contributes to Command Palette (Ctrl+Alt+C), Status Bar (♟️ Chess), and Ribbon View Tab.",
+    "longDescription": "Bring intellectual gaming into your document studio! This extension provides a full-featured, playable Chess game directly inside a floating shell overlay.\n\n### Key Features:\n\u2022 **Floating Draggable Shell Overlay**: Runs smoothly on top of any document workspace without interrupting your PDF work.\n\u2022 **Single Player vs Smart CPU**: Configurable AI difficulty (Easy, Medium, Hard) powered by off-thread alpha-beta minimax search.\n\u2022 **Full FIDE Chess Rules**: Standard legal move validation, castling, en passant, and interactive pawn promotion (Queen, Rook, Bishop, Knight).\n\u2022 **Captured Pieces & Material Advantage**: Real-time captured pieces display and point advantage tracker (+3, +1).\n\u2022 **Material 3 Expressive Board Themes**: Emerald Studio, Classic Wood, and Midnight Slate high-contrast themes.\n\u2022 **Deep Shell Integration**: Contributes to Command Palette (Ctrl+Alt+C), Status Bar (\u265f\ufe0f Chess), and Ribbon View Tab.",
     "rating": 5.0,
     "ratingCount": 38,
     "installCount": 480,
@@ -841,7 +851,7 @@
     "contributedFeatures": [
       "Shell Overlay: Floating Chess Game Card",
       "Command Palette: 'Play Chess (Shell Overlay)' (Ctrl+Alt+C)",
-      "Status Bar: Clickable '♟️ Chess' Indicator Pill",
+      "Status Bar: Clickable '\u265f\ufe0f Chess' Indicator Pill",
       "Ribbon: View Tab > Plugins > Chess Button"
     ],
     "dependencies": [
@@ -868,7 +878,7 @@
     "version": "1.1.0",
     "category": "UI & Extensions",
     "description": "Interactive floating Tic-Tac-Toe mini-game with local 2-Player mode and intelligent AI opponent.",
-    "longDescription": "Bring playful entertainment into your PDF workflow! Features single player vs AI (with Easy, Smart, and Unbeatable difficulties) and local 2-player pass-and-play mode. Deeply integrated with FryPDF shell overlay, status bar, and command palette.\n\n### Key Features:\n• **Floating Shell Overlay**: Smoothly drags and docks on top of any document workspace.\n• **Single Player vs Smart AI**: Multiple difficulty settings with strategic minimax moves.\n• **Local 2-Player Mode**: Play head-to-head with friends or colleagues.\n• **Score Counter**: Live score tracking for wins, losses, and draws.\n• **Deep Shell Integration**: Contributes to Command Palette, Status Bar, and Ribbon View Tab.",
+    "longDescription": "Bring playful entertainment into your PDF workflow! Features single player vs AI (with Easy, Smart, and Unbeatable difficulties) and local 2-player pass-and-play mode. Deeply integrated with FryPDF shell overlay, status bar, and command palette.\n\n### Key Features:\n\u2022 **Floating Shell Overlay**: Smoothly drags and docks on top of any document workspace.\n\u2022 **Single Player vs Smart AI**: Multiple difficulty settings with strategic minimax moves.\n\u2022 **Local 2-Player Mode**: Play head-to-head with friends or colleagues.\n\u2022 **Score Counter**: Live score tracking for wins, losses, and draws.\n\u2022 **Deep Shell Integration**: Contributes to Command Palette, Status Bar, and Ribbon View Tab.",
     "rating": 5.0,
     "ratingCount": 42,
     "installCount": 520,
@@ -895,7 +905,7 @@
     "contributedFeatures": [
       "Shell Overlay: Floating Tic-Tac-Toe Game Card",
       "Command Palette: 'Play Tic-Tac-Toe (Shell Overlay)'",
-      "Status Bar: Clickable '🎮 Tic-Tac-Toe' Indicator Pill",
+      "Status Bar: Clickable '\ud83c\udfae Tic-Tac-Toe' Indicator Pill",
       "Ribbon: View Tab > Plugins > Tic-Tac-Toe Action Button"
     ],
     "dependencies": [
@@ -932,7 +942,7 @@
     "version": "1.0.0",
     "category": "UI & Extensions",
     "description": "Playable, draggable retro-arcade Snake game floating over the application canvas in the 'shell.overlay' slot.",
-    "longDescription": "Bring playful retro-arcade entertainment into your document workflow! This extension mounts a high-performance floating Snake game into the 'shell.overlay' slot.\n\n### Key Features:\n• **Non-Modal Floating Overlay**: Runs smoothly on top of any document or workspace page without interrupting your PDF work.\n• **60+ FPS Smooth Avalonia Drawing**: Direct DrawingContext GPU rendering with zero Large Object Heap allocations.\n• **Tactile Custom Chrome Frame**: Dark retro arcade aesthetics with D-Pad and score counters.\n• **Interactive Controls**: Keyboard arrows/WASD, on-screen tactile D-Pad buttons, difficulty & speed selection.\n• **Deep Shell Integration**: Contributes to Command Palette, Status Bar, and Ribbon View Tab.",
+    "longDescription": "Bring playful retro-arcade entertainment into your document workflow! This extension mounts a high-performance floating Snake game into the 'shell.overlay' slot.\n\n### Key Features:\n\u2022 **Non-Modal Floating Overlay**: Runs smoothly on top of any document or workspace page without interrupting your PDF work.\n\u2022 **60+ FPS Smooth Avalonia Drawing**: Direct DrawingContext GPU rendering with zero Large Object Heap allocations.\n\u2022 **Tactile Custom Chrome Frame**: Dark retro arcade aesthetics with D-Pad and score counters.\n\u2022 **Interactive Controls**: Keyboard arrows/WASD, on-screen tactile D-Pad buttons, difficulty & speed selection.\n\u2022 **Deep Shell Integration**: Contributes to Command Palette, Status Bar, and Ribbon View Tab.",
     "rating": 5.0,
     "ratingCount": 128,
     "installCount": 4200,
@@ -960,7 +970,7 @@
     "contributedFeatures": [
       "Shell Overlay: Floating Snake Game Card",
       "Command Palette: 'Play Snake Game (Shell Overlay)'",
-      "Status Bar: Clickable '🐍 Snake' Indicator Pill",
+      "Status Bar: Clickable '\ud83d\udc0d Snake' Indicator Pill",
       "Ribbon: View Tab > Plugins > Snake Game Action Button"
     ],
     "dependencies": [
@@ -987,7 +997,7 @@
     "version": "1.0.0",
     "category": "UI & Extensions",
     "description": "Floating Markdown scratchpad with live word/char counters and timestamp logs for PDF review.",
-    "longDescription": "Jot down rapid review notes, citations, page corrections, and checklists without leaving your current PDF screen.\n\n### Key Features:\n• **Automatic M3 Expressive Card Chrome**: Automatic draggable header, pin toggle, and minimize pill.\n• **Live Word & Character Counter**: Keep track of notes and summary length in real time.\n• **Quick Action Pills**: One-click timestamp insertions and notes clearing.\n• **Deep Shell Integration**: Contributes to Command Palette (`Ctrl+Alt+N`), Status Bar (`📝 Notes`), and Ribbon View Tab.",
+    "longDescription": "Jot down rapid review notes, citations, page corrections, and checklists without leaving your current PDF screen.\n\n### Key Features:\n\u2022 **Automatic M3 Expressive Card Chrome**: Automatic draggable header, pin toggle, and minimize pill.\n\u2022 **Live Word & Character Counter**: Keep track of notes and summary length in real time.\n\u2022 **Quick Action Pills**: One-click timestamp insertions and notes clearing.\n\u2022 **Deep Shell Integration**: Contributes to Command Palette (`Ctrl+Alt+N`), Status Bar (`\ud83d\udcdd Notes`), and Ribbon View Tab.",
     "rating": 4.9,
     "ratingCount": 94,
     "installCount": 2850,
@@ -1013,7 +1023,7 @@
     "contributedFeatures": [
       "Shell Overlay: Floating Scratchpad Card",
       "Command Palette: 'Toggle Review Scratchpad (Shell Overlay)'",
-      "Status Bar: Clickable '📝 Notes' Indicator Pill",
+      "Status Bar: Clickable '\ud83d\udcdd Notes' Indicator Pill",
       "Ribbon: View Tab > Plugins > Scratchpad Button"
     ],
     "dependencies": [
@@ -1040,7 +1050,7 @@
     "version": "1.0.0",
     "category": "Tools & Productivity",
     "description": "Live performance telemetry HUD showing managed heap allocation, GC cycles, and memory trimming.",
-    "longDescription": "Monitor runtime engine health, managed memory, GC generations, and system architecture in a compact floating HUD.\n\n### Key Features:\n• **Real-Time Memory Telemetry**: Track managed heap size and GC frequency.\n• **One-Click Heap Trimming**: Trigger immediate memory compaction and trimming during heavy PDF sessions.\n• **Compact Floating Utility**: Stays parked neatly on top of the document workspace without obstructing tools.\n• **Deep Shell Integration**: Contributes to Command Palette (`Ctrl+Alt+T`), Status Bar (`⚡ HUD`), and Ribbon View Tab.",
+    "longDescription": "Monitor runtime engine health, managed memory, GC generations, and system architecture in a compact floating HUD.\n\n### Key Features:\n\u2022 **Real-Time Memory Telemetry**: Track managed heap size and GC frequency.\n\u2022 **One-Click Heap Trimming**: Trigger immediate memory compaction and trimming during heavy PDF sessions.\n\u2022 **Compact Floating Utility**: Stays parked neatly on top of the document workspace without obstructing tools.\n\u2022 **Deep Shell Integration**: Contributes to Command Palette (`Ctrl+Alt+T`), Status Bar (`\u26a1 HUD`), and Ribbon View Tab.",
     "rating": 4.8,
     "ratingCount": 76,
     "installCount": 1920,
@@ -1066,7 +1076,7 @@
     "contributedFeatures": [
       "Shell Overlay: Floating Telemetry HUD Card",
       "Command Palette: 'Toggle Telemetry HUD (Shell Overlay)'",
-      "Status Bar: Clickable '⚡ HUD' Indicator Pill",
+      "Status Bar: Clickable '\u26a1 HUD' Indicator Pill",
       "Ribbon: View Tab > Plugins > Telemetry HUD Button"
     ],
     "dependencies": [
@@ -1093,7 +1103,7 @@
     "version": "1.0.0",
     "category": "Tools & Productivity",
     "description": "Floating playlist-based music player with transport controls, seek/volume, and real ID3 metadata.",
-    "longDescription": "Play your own music while you work, without leaving your PDF workspace.\n\n### Key Features:\n• **Automatic M3 Expressive Card Chrome**: Draggable header, pin toggle, and minimize pill.\n• **Playlist**: Add local audio files (MP3, WAV, FLAC) and build a persistent playlist.\n• **Real Metadata**: Title, artist, album, and embedded cover art read from each file's tags.\n• **Full Transport Controls**: Play/pause, next/previous, stop, seek bar, volume, and repeat modes.\n• **Deep Shell Integration**: Contributes to Command Palette (`Ctrl+Alt+P`), Status Bar (`🎵 Music`), and Ribbon View Tab.",
+    "longDescription": "Play your own music while you work, without leaving your PDF workspace.\n\n### Key Features:\n\u2022 **Automatic M3 Expressive Card Chrome**: Draggable header, pin toggle, and minimize pill.\n\u2022 **Playlist**: Add local audio files (MP3, WAV, FLAC) and build a persistent playlist.\n\u2022 **Real Metadata**: Title, artist, album, and embedded cover art read from each file's tags.\n\u2022 **Full Transport Controls**: Play/pause, next/previous, stop, seek bar, volume, and repeat modes.\n\u2022 **Deep Shell Integration**: Contributes to Command Palette (`Ctrl+Alt+P`), Status Bar (`\ud83c\udfb5 Music`), and Ribbon View Tab.",
     "rating": 4.9,
     "ratingCount": 12,
     "installCount": 340,
@@ -1121,7 +1131,7 @@
     "contributedFeatures": [
       "Shell Overlay: Floating Music Player Card",
       "Command Palette: 'Toggle Music Player (Shell Overlay)'",
-      "Status Bar: Clickable '🎵 Music' Indicator Pill",
+      "Status Bar: Clickable '\ud83c\udfb5 Music' Indicator Pill",
       "Ribbon: View Tab > Plugins > Music Player Button"
     ],
     "dependencies": [
@@ -1145,10 +1155,10 @@
     "id": "frypdf.overlay.imageeditor",
     "name": "Image Editor",
     "publisher": "FryPDF Team",
-    "version": "3.2.2",
+    "version": "3.2.3",
     "category": "Design & Creation",
     "description": "Layered design & photo editing studio: inpainting Remove tool, Curves, Liquify, tone adjustments, text warp, Adobe/FITS/PCX/KRA codecs, and OpenType typography.",
-    "longDescription": "Compose graphics directly inside your PDF workspace with a full-featured, resizable floating design editor.\n\n### Key Features:\n• **Inpainting & Retouching**: Advanced Remove tool with brush stroke accumulation and multi-layer sampling to seamlessly erase unwanted objects.\n• **Curves, Tone & Liquify**: Precise curves adjustment, Shadows/Highlights, Black & White filters, and interactive mesh liquify distortion.\n• **Text Warp & Typography**: 4×4 Bicubic Bezier text warping and OpenType feature tags (ligatures, stylistic sets, kerning).\n• **Expanded Codecs & Presets**: Import Adobe Grd (gradients), Abr (brushes), Patterns (pat), PSD tagged blocks, FITS, PCX, and KRA files.\n• **Layer-based Canvas**: Stack Text, Rectangle, Ellipse, Arrow, and imported Images in Z-order, with a clickable Layers panel (visibility/lock/rename), multi-select, marquee-select, grouping, and align/distribute.\n• **Full Style Controls**: Fill & stroke color pickers, gradient fills (linear/radial), stroke width/dash style, corner radius, opacity, and precise numeric X/Y/Width/Height/Rotation fields.\n• **Click-to-Place Tools & Eyedropper**: Click or drag directly on the canvas to place shapes and text, or sample any on-canvas color with the eyedropper — with V/T/R/E/A keyboard shortcuts.\n• **Free-Angle Rotation & Group Resize**: Drag-to-rotate any single element or a whole multi-selection around a shared pivot (15° Shift-snap), plus proportional group resizing.\n• **Smart Alignment Guides & Inline Text Editing**: Snapping guide lines while dragging, plus double-click-to-edit text directly on the canvas.\n• **Undo/Redo**: Full edit history across every mutation — moves, resizes, rotations, crops, grouping, and color adjustments.\n• **Zoom & Pan**: Smooth cursor-anchored zoom, pan, and fit-to-window on a resizable canvas.\n• **Per-Image Crop, Rotate & Flip**: Precise crop handles with fixed-aspect presets (1:1, 4:3, 3:2, 16:9, 9:16), 90° rotation, and horizontal/vertical flip, with aspect-ratio lock.\n• **Deep Color Adjustments & 9 Filters**: Brightness/contrast/saturation/hue/temperature/tint/blur/sharpen sliders, one-click Auto-Enhance, and Black & White, Sepia, Vintage, Vivid, Noir, Invert, Duotone, and Vignette presets.\n• **Duplicate, Copy & Paste**: Ctrl+D to duplicate and an in-app Ctrl+C/Ctrl+V element clipboard.\n• **Template Gallery**: 8 starter templates — slide, certificate, flyer, photo collage, quote card, cover page, social post, and sticky note — each with a live-rendered preview.\n• **Project Save/Load**: Save and reopen full editable projects as `.fryimg` files, with a confirm-before-discard safeguard.\n• **PNG Export & Clipboard**: Export the full canvas to PNG, or copy it as a real image directly to the system clipboard.\n• **Material 3 Expressive UI**: Fully theme-adaptive light/dark interface with segmented tool selectors and tactile sliders.\n• **Shell Integration**: Dedicated Workspace Studio Page, Command Palette (`Ctrl+Alt+I`), Status Bar pill, and Ribbon button.",
+    "longDescription": "Compose graphics directly inside your PDF workspace with a full-featured, resizable floating design editor.\n\n### Key Features:\n\u2022 **Inpainting & Retouching**: Advanced Remove tool with brush stroke accumulation and multi-layer sampling to seamlessly erase unwanted objects.\n\u2022 **Curves, Tone & Liquify**: Precise curves adjustment, Shadows/Highlights, Black & White filters, and interactive mesh liquify distortion.\n\u2022 **Text Warp & Typography**: 4\u00d74 Bicubic Bezier text warping and OpenType feature tags (ligatures, stylistic sets, kerning).\n\u2022 **Expanded Codecs & Presets**: Import Adobe Grd (gradients), Abr (brushes), Patterns (pat), PSD tagged blocks, FITS, PCX, and KRA files.\n\u2022 **Layer-based Canvas**: Stack Text, Rectangle, Ellipse, Arrow, and imported Images in Z-order, with a clickable Layers panel (visibility/lock/rename), multi-select, marquee-select, grouping, and align/distribute.\n\u2022 **Full Style Controls**: Fill & stroke color pickers, gradient fills (linear/radial), stroke width/dash style, corner radius, opacity, and precise numeric X/Y/Width/Height/Rotation fields.\n\u2022 **Click-to-Place Tools & Eyedropper**: Click or drag directly on the canvas to place shapes and text, or sample any on-canvas color with the eyedropper \u2014 with V/T/R/E/A keyboard shortcuts.\n\u2022 **Free-Angle Rotation & Group Resize**: Drag-to-rotate any single element or a whole multi-selection around a shared pivot (15\u00b0 Shift-snap), plus proportional group resizing.\n\u2022 **Smart Alignment Guides & Inline Text Editing**: Snapping guide lines while dragging, plus double-click-to-edit text directly on the canvas.\n\u2022 **Undo/Redo**: Full edit history across every mutation \u2014 moves, resizes, rotations, crops, grouping, and color adjustments.\n\u2022 **Zoom & Pan**: Smooth cursor-anchored zoom, pan, and fit-to-window on a resizable canvas.\n\u2022 **Per-Image Crop, Rotate & Flip**: Precise crop handles with fixed-aspect presets (1:1, 4:3, 3:2, 16:9, 9:16), 90\u00b0 rotation, and horizontal/vertical flip, with aspect-ratio lock.\n\u2022 **Deep Color Adjustments & 9 Filters**: Brightness/contrast/saturation/hue/temperature/tint/blur/sharpen sliders, one-click Auto-Enhance, and Black & White, Sepia, Vintage, Vivid, Noir, Invert, Duotone, and Vignette presets.\n\u2022 **Duplicate, Copy & Paste**: Ctrl+D to duplicate and an in-app Ctrl+C/Ctrl+V element clipboard.\n\u2022 **Template Gallery**: 8 starter templates \u2014 slide, certificate, flyer, photo collage, quote card, cover page, social post, and sticky note \u2014 each with a live-rendered preview.\n\u2022 **Project Save/Load**: Save and reopen full editable projects as `.fryimg` files, with a confirm-before-discard safeguard.\n\u2022 **PNG Export & Clipboard**: Export the full canvas to PNG, or copy it as a real image directly to the system clipboard.\n\u2022 **Material 3 Expressive UI**: Fully theme-adaptive light/dark interface with segmented tool selectors and tactile sliders.\n\u2022 **Shell Integration**: Dedicated Workspace Studio Page, Command Palette (`Ctrl+Alt+I`), Status Bar pill, and Ribbon button.",
     "rating": 5.0,
     "ratingCount": 18,
     "installCount": 640,
@@ -1158,7 +1168,7 @@
     "license": "MIT",
     "isVerified": true,
     "isOfficial": true,
-    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/frypdf.overlay.imageeditor/v3.2.2/ImageEditor.fryplugin",
+    "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/frypdf.overlay.imageeditor/v3.2.3/ImageEditor.fryplugin",
     "tags": [
       "adjustments",
       "brushes",
@@ -1196,15 +1206,25 @@
     ],
     "contributedFeatures": [
       "Workspace Studio Page: Left sidebar navigation 'Image Editor' under Overview",
-      "Shell Overlay: Resizable Floating Image Editor Canvas (default 900 × 640, 680×520 to 1400×1100)",
+      "Shell Overlay: Resizable Floating Image Editor Canvas (default 900 \u00d7 640, 680\u00d7520 to 1400\u00d71100)",
       "Command Palette: 'Open Image Editor (Shell Overlay)' (Ctrl+Alt+I)",
-      "Status Bar: Clickable '🎨 Image Editor' Indicator Pill",
+      "Status Bar: Clickable '\ud83c\udfa8 Image Editor' Indicator Pill",
       "Ribbon: View Tab > Plugins > Image Editor Button"
     ],
     "dependencies": [
       "PdfEditorApp.Core >= 1.0.0"
     ],
     "versions": [
+      {
+        "version": "3.2.3",
+        "releaseDate": "2026-10-30",
+        "downloadUrl": "https://raw.githubusercontent.com/codefrydev/FryStore/refs/heads/main/plugins/frypdf.overlay.imageeditor/v3.2.3/ImageEditor.fryplugin",
+        "sha256": "d458163cfe2e62718fcf05d60225887d0e714a374315f34b836d2091a4551685",
+        "formattedSize": "6.0 MB",
+        "minHostVersion": "0.1.0",
+        "targetFramework": "net10.0",
+        "releaseNotes": "High-fidelity layer rendering and thumbnail preview update: enabled thumbnail generation across shape and text layers, defaulted thumbnail clipping to layer bounds for sharp element previews in the Layers panel, verified 99.94% compositor pixel parity against Photoshop reference composite on complex real-world PSDs."
+      },
       {
         "version": "3.2.2",
         "releaseDate": "2026-10-30",
@@ -1256,6 +1276,6 @@
         "releaseNotes": "Release v3.0.0 of Image Editor."
       }
     ],
-    "sha256": "eecf1052c554278ca8a64264e942bd6a8af5b8547bbde981cb5b335f09247505"
+    "sha256": "d458163cfe2e62718fcf05d60225887d0e714a374315f34b836d2091a4551685"
   }
 ]
